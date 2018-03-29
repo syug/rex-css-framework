@@ -1,0 +1,225 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Search bar",
+          "jp": "サーチ"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Basic",
+          "jp": "ベーシック"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "SearchBar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Rounded",
+          "jp": "ベーシック"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "SearchBar",
+            "type": "rounded"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "SearchBar",
+            "type": "outline"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline & Rounded",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "SearchBar",
+            "type": "rounded outline"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Search suggestions",
+          "jp": "ベーシック"
+        }
+      },
+      {
+        "component": "Heading",
+        "type": "h5",
+        "text": {
+          "en": "Query suggestions",
+          "jp": "ベーシック"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "data": [
+          {
+            "component": "SearchSuggestions",
+            "type": "query",
+            "text": {
+              "en": [
+                {
+                  "displayText": "Rakuten Ichiba"
+                },
+                {
+                  "displayText": "Rakuten Travel"
+                },
+                {
+                  "displayText": "Rakuten Card"
+                },
+                {
+                  "displayText": "Rakuten Bank"
+                },
+                {
+                  "displayText": "Rakuten Security"
+                }
+              ],
+              "jp": [
+                {
+                  "displayText": "楽天市場"
+                },
+                {
+                  "displayText": "楽天トラベル"
+                },
+                {
+                  "displayText": "楽天カード"
+                },
+                {
+                  "displayText": "楽天銀行"
+                },
+                {
+                  "displayText": "楽天証券"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h5",
+        "text": {
+          "en": "Content suggestions",
+          "jp": "ベーシック"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "data": [
+          {
+            "component": "SearchSuggestions",
+            "type": "content",
+            "text": {
+              "en": [
+                {
+                  "section": "Components",
+                  "list": [
+                    "Dropdown menu",
+                    "Dropdown menu items"
+                  ]
+                },
+                {
+                  "section": "Buttons",
+                  "list": [
+                    "Dropdown buttons",
+                    "Dropdown shadow for buttons"
+                  ]
+                }
+              ],
+              "jp": [
+                {
+                  "section": "Components",
+                  "list": [
+                    "Dropdown menu",
+                    "Dropdown menu items"
+                  ]
+                },
+                {
+                  "section": "Buttons",
+                  "list": [
+                    "Dropdown buttons",
+                    "Dropdown shadow for buttons"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

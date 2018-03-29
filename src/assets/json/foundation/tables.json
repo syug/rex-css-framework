@@ -1,0 +1,462 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Tables",
+          "jp": "テーブル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Basic table",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Striped rows",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "striped",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Bordered",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "bordered",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Condensed",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "condensed",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Hover (desktop only)",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "hover",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "States",
+          "jp": "テーブル"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "",
+            "target": ["designer", "developer"],
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "active",
+                  "cells": [
+                    "Active", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "success",
+                  "cells": [
+                    "Success", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "info",
+                  "cells": [
+                    "Info", "lmnop", "99", "$99"
+                  ]
+                },
+                {
+                  "rowType": "warning",
+                  "cells": [
+                    "Warning", "lmnop", "99", "$99"
+                  ]
+                },
+                {
+                  "rowType": "danger",
+                  "cells": [
+                    "Danger", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Responsive",
+          "jp": "レスポンシブ"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "responsive",
+            "headings": {
+              "en": [
+                "Name", "Type", "Point", "Price", "Type2", "Point2", "Price2"
+              ],
+              "jp": ""
+            },
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "abcdef", "abcdef", "1,000", "$1,000", "abcdef", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "ghijk", "ghijk", "1,000", "$1,000", "ghijk", "1,000", "$1,000"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "lmnop", "lmnop", "99", "$99", "lmnop", "99", "$99"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Title Column",
+          "jp": "タイトル欄"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Table",
+            "type": "title",
+            "headings": "",
+            "rows": {
+              "en": [
+                {
+                  "rowType": "",
+                  "cells": [
+                    "Name", "ABCDEFGHIJKLMN"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "Name2", "abcdef"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "Name3", "About 5.0 inches, FHD (1920 × 1080 dots), IPS"
+                  ]
+                },
+                {
+                  "rowType": "",
+                  "cells": [
+                    "Name4", "Height 141.2 mm × width 69.1 mm × thickness 7.1 mm"
+                  ]
+                }
+              ],
+              "jp": [
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

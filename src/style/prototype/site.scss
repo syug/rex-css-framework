@@ -1,0 +1,43 @@
+%site-padding {
+	padding-left: 64px;
+	padding-right: 64px;
+}
+
+#site {
+	min-width: 768px;
+	%scrollableArea {
+		padding: 0;
+		height:100vh;
+		max-height:100vh;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	#boxSidebar {
+		@extend %scrollableArea;
+		@include hideScrollbar();
+	}
+
+ 	#boxPage {
+		@extend %scrollableArea;
+		background: $gray-lightest;
+		#content {
+			section {
+				@extend %site-padding;
+			}
+		}
+	}
+
+	.copyright,
+	#header {
+		@extend %site-padding;
+	}
+
+	
+	@import "scaffolding";
+	@import "sidebar/sidebar";
+	@import "header/header";
+	@import "content/content";
+	@import "footer/footer";
+	@import "pages/main";
+}

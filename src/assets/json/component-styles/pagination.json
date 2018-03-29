@@ -1,0 +1,297 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Pagination",
+          "jp": "ページネーション"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "subtype": "active"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "With Text",
+          "jp": "With Text"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "",
+            "subtype": "active",
+            "withText": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Next & Prev Button",
+          "jp": "Next & Prev Button"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "button",
+            "prevText": "Prev",
+            "nextText": "Next"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "button disabled",
+            "subtype": "disabled",
+            "prevText": "Prev",
+            "nextText": "Next"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Title Next & Prev Button",
+          "jp": "Title Next & Prev Button"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "button title",
+            "prevText": "Article 1",
+            "nextText": "Article 3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "button title disabled",
+            "subtype": "disabled",
+            "prevText": "Article 1",
+            "nextText": "Article 3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Arrow",
+          "jp": "Arrow"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "arrow"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "arrow disabled"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Mobile",
+          "jp": "モバイル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Mobile",
+          "jp": "Mobile"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Pagination",
+            "type": "mobile",
+            "total": "30",
+            "activeNo": "11"
+          }
+        ]
+      }
+    ]
+  }
+]

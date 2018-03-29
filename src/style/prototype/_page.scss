@@ -1,0 +1,58 @@
+#box-page {
+  padding: 0;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .top-section {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);    
+    .col-xs-12 {
+      padding: 0 80px;
+    }
+    h1 {
+      display: inline-block;
+    }
+    .edited-info {
+      float: right;
+      margin-top: 60px;
+      span {
+        color: $gray-medium-light;
+        float: right;
+        margin-left: 24px;
+      }
+    }
+  }
+  &.homepage {
+    .top-section {
+      .col-xs-12 {
+        padding: 0;
+      }
+    }
+  }
+}
+
+#content {
+  .container-fluid {
+    padding: 0;
+  }
+  .heading {
+    padding-bottom: 32px;
+    margin-bottom: 56px;
+    border-bottom: solid 1px $gray-lighter;
+  }
+}
+
+pre, code {
+  font-size: 12px;
+  background: $gray-darker;
+  color: $gray-lightest;
+  padding: 16px;
+  border-radius: 4px;
+  white-space: pre-wrap;       /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;      /* Opera 4-6 */
+  white-space: -o-pre-wrap;    /* Opera 7 */
+  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+

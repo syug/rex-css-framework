@@ -1,0 +1,111 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Rating",
+          "jp": "評価"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Rating"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Hover",
+          "jp": "Hover"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Rating",
+            "type": "hover"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Readonly",
+          "jp": "Readonly"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Rating",
+            "type": "readonly"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Rating",
+            "type": "disabled"
+          }
+        ]
+      }
+    ]
+  }
+
+]

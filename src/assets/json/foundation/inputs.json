@@ -1,0 +1,647 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Inputs - text",
+          "jp": "入力 - テキスト"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Text input field CSS components",
+          "jp": "テキストエリア"
+        }
+      },
+      {
+        "component": "Text",
+        "text": {
+          "en": "The text input field styles below are provided without animations because JavaScript is not included in the ReX CSS framework. To achieve ReX animations, please use our ReX Components Framework (to be released Jun 2018).",
+          "jp": "日本語"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Basic examples",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "",
+            "state": "focus",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "InputGroup",
+            "type": "",
+            "state": "focus",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "label",
+              "jp": "レーブル"
+            }
+          },
+          {
+            "component": "InputGroup",
+            "type": "",
+            "state": "focus",
+            "helperText": {
+              "en": "Helper text",
+              "jp": "ヘルプテキスト"
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "text",
+            "state": "disabled",
+            "helperText": {
+              "en": "Helper text",
+              "jp": "ヘルプテキスト"
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Success & error states",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "text",
+            "state": "success",
+            "helperText": {
+              "en": "Awesome!",
+              "jp": "ヘルプテキスト"
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          },
+          {
+            "component": "InputGroup",
+            "type": "text",
+            "state": "error",
+            "helperText": {
+              "en": "Error: Text explaining the error",
+              "jp": "ヘルプテキスト"
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Validation states",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "text",
+            "state": "validation",
+            "validation": [
+              {
+                "resolved": true,
+                "text": {
+                  "en": "Must have a capital letter",
+                  "jp": "日本語"
+                }
+              },
+              {
+                "resolved": true,
+                "text": {
+                  "en": "Mixture of letters and numbers",
+                  "jp": "日本語"
+                }
+              },
+              {
+                "resolved": false,
+                "text": {
+                  "en": "Username must be 4 or more characters",
+                  "jp": "日本語"
+                }
+              }
+            ],
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Icon label",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "text",
+            "option": "icon-label",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Password (without JavaScript)",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "InputGroup",
+            "type": "password",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "value": {
+              "en": "Value",
+              "jp": "入力済"
+            },
+            "placeHolder": {
+              "en": "Place holder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Checkbox",
+          "jp": "チェックボックス"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Checkbox",
+            "text": "Checkbox"
+          },
+          {
+            "component": "Checkbox",
+            "text": "Checkbox",
+            "type": "rounded"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Checkbox - disabled",
+          "jp": "チェックボックス - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Checkbox",
+            "text": "Checkbox",
+            "type": "disabled"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Radio button",
+          "jp": "ラジオボタン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "RadioButton",
+            "text": [
+              "radio"
+            ]
+          }
+        ]
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "RadioButton",
+            "name": "character",
+            "text": [
+              "mario",
+              "luigi",
+              "toad"
+            ],
+            "label": "Who is your favorite character?"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Radio button - disabled",
+          "jp": "ラジオボタン - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "RadioButton",
+            "text": [
+              "radio"
+            ],
+            "status": "disabled"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Switch",
+          "jp": "Switch"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Switch"
+          },
+          {
+            "component": "Switch",
+            "type": "rounded"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Switch - active",
+          "jp": "Switch - active"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Switch",
+            "type": "selected"
+          },
+          {
+            "component": "Switch",
+            "type": "rounded selected"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Switch - disabled",
+          "jp": "Switch - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Switch",
+            "type": "disabled"
+          },
+          {
+            "component": "Switch",
+            "type": "rounded disabled"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Stepper",
+          "jp": "Stepper"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Stepper",
+            "rightIcon": "plus",
+            "leftIcon": "minus"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Stepper - active",
+          "jp": "Stepper - active"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Stepper",
+            "rightIcon": "plus",
+            "leftIcon": "minus",
+            "selectedRight": "true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Stepper - disabled",
+          "jp": "Stepper - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "5-7",
+        "data": [
+          {
+            "component": "Stepper",
+            "disabled": "true",
+            "rightIcon": "plus",
+            "leftIcon": "minus"
+          }
+        ]
+      }
+    ]
+  }
+]

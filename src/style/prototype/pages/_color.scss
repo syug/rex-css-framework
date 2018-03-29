@@ -1,0 +1,26 @@
+.with-swatch {
+  margin-top: 64px;
+}
+
+.brand-color {
+  margin-top: 40px;
+  text-align: center;
+  .rex-icon {
+    font-size: 144px;
+  }
+  small {
+    display: block;
+  }
+}
+.swatch {
+  height: 48px;
+  padding: 0 16px;
+  line-height: 48px;
+  color: $white;
+  &.dark-text {
+    color: $gray-darkest;
+  }
+  .right {
+    float: right;
+  }
+}

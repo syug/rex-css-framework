@@ -1,0 +1,269 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Dropdowns",
+          "jp": "ドロップダウン"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button"
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "disabled"
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "Outline"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "btn-outline"
+         }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Split button",
+          "jp": "Split button"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "splitButton": true
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "disabled",
+            "splitButton": true
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "Outline"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "outline",
+            "splitButton": true
+         }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills",
+          "jp": "Pills"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "btn-pill"
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "btn-pill disabled"
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "Outline"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "btn-pill btn-outline"
+         }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills-Split button",
+          "jp": "Pills-Split button"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "pill",
+            "splitButton": true
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "pill disabled",
+            "splitButton": true
+         }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "Outline"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Dropdowns",
+            "text": "Button",
+            "type": "pill outline",
+            "splitButton": true
+         }
+        ]
+      }
+    ]
+  }
+]

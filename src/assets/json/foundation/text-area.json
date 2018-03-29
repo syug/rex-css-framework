@@ -1,0 +1,214 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Text area",
+          "jp": "テキストエリア"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Text area CSS components",
+          "jp": "テキストエリア"
+        }
+      },
+      {
+        "component": "Text",
+        "text": {
+          "en": "The text area styles below are provided without animations because JavaScript is not included in the ReX CSS framework. To achieve ReX animations, please use our text area React components (to be released April 2018).",
+          "jp": "日本語"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Basic example",
+          "jp": "日本語"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "6-6",
+        "data": [
+          {
+            "component": "TextArea",
+            "helperText": {
+              "en": "Helper text",
+              "jp": "ヘルプテキスト"
+            },
+            "placeHolder": {
+              "en": "Placeholder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Active",
+          "jp": "アクティブ"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "6-6",
+        "data": [
+          {
+            "component": "TextArea",
+            "type": "active",
+            "helperText": {
+              "en": "Helper text",
+              "jp": "ヘルプテキスト"
+            },
+            "placeHolder": {
+              "en": "Placeholder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "日本語"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "6-6",
+        "data": [
+          {
+            "component": "TextArea",
+            "state": "disabled",
+            "helperText": {
+              "en": "Helper text",
+              "jp": "ヘルプテキスト"
+            },
+            "placeHolder": {
+              "en": "Placeholder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Success",
+          "jp": "日本語"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "6-6",
+        "data": [
+          {
+            "component": "TextArea",
+            "state": "success",
+            "stateText": "Awesome!",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "placeHolder": {
+              "en": "Placeholder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Error",
+          "jp": "日本語"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "6-6",
+        "data": [
+          {
+            "component": "TextArea",
+            "state": "error",
+            "stateText": "Error: Text explaining the error",
+            "helperText": {
+              "en": "",
+              "jp": ""
+            },
+            "placeHolder": {
+              "en": "Placeholder",
+              "jp": "プレースホルダー"
+            },
+            "label": {
+              "en": "Label",
+              "jp": "レーブル"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

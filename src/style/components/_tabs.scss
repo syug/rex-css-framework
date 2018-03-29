@@ -1,0 +1,108 @@
+.tab {
+  a.item {
+    text-decoration: none;
+  }
+  .item {
+    font-size: 16px;
+    color: $gray-medium;
+    padding: 7.5px 17.5px;
+    border-bottom: 1px solid $gray-light;
+  }
+  .active {
+    color: $brand-primary;
+    border-bottom: 1px solid $brand-primary;
+  }
+  .selected, .item:hover {
+    background-color: $gray-lightest;
+    border-radius: 4px 4px 0 0;
+  }
+  &.overflow {
+    padding-right: 32px;
+    padding-left: 32px;
+    display: inline-block;
+    position: relative;
+    .previous {
+      &::before {
+        content: $_32-chevron-left;
+        font-family: rex-icon;
+        position: absolute;
+        top: 2px;
+        left: 0;
+        color: $brand-primary;
+      }
+    }
+    .next {
+      &::after {
+        content: $_32-chevron-right;
+        font-family: rex-icon;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        color: $brand-primary;
+      }
+    }
+    .tabItem-group {
+      overflow: hidden;
+      min-height: 40px;
+      min-width: 150px;
+    }
+    .cover {
+      position: absolute;
+      top: 0;
+      bottom: 6px;
+      right: 0;
+      width: 100px;
+      margin-right: 32px;
+    }
+    .cover-left {
+      position: absolute;
+      top: 0;
+      bottom: 6px;
+      left: 0;
+      width: 100px;
+      margin-left: 32px;
+    }
+  }
+  &.border-top {
+    .item {
+      border-top: 1px solid $gray-light;
+      border-bottom: none;
+      &.active {
+        border-top: 1px solid $brand-primary;
+      }
+      &.selected, &.item:hover {
+        border-radius: 0 0 4px 4px;
+      }
+    }
+  }
+  &.mobile {
+    .item {
+      border-bottom: none;
+      &.active {
+        border-bottom: 1px solid $brand-primary;
+      }
+      &.selected, &:hover {
+        background-color: transparent;
+      }
+    }
+    &.icons {
+      background-color: $white;
+      height: 40px;
+      padding-top: 8px;
+      display: inline-block;
+      .item > .rex-icon {
+        font-size: 24px;
+      }
+      .item {
+        cursor: pointer;
+        color: $black;
+        padding-right: 32px;
+        padding-left: 32px;
+        &.active {
+          border-bottom: none;
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}

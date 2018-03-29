@@ -1,0 +1,17 @@
+{
+	"component": "List",
+	"type": "",
+	"list": {
+		"en": [
+			{
+				"boldedPhrase": "optional phrase",
+				"text": "Sample A"
+			},
+			{
+				"boldedPhrase": "optional phrase",
+				"text": "Sample B"
+			}
+		],
+		"jp": []
+	}
+}

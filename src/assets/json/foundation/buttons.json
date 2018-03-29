@@ -1,0 +1,901 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Buttons",
+          "jp": "ボタン"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Default",
+          "jp": "デフォルト"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Icon",
+          "jp": "アイコン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "icon": "cart-f",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          },
+          {
+            "component": "Button",
+            "type": "default",
+            "icon": "cart-f",
+            "iconPositionLeft": "true",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Outline",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "outline",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Disabled",
+          "jp": "Disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "disabled": "true",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills - default",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "option": "pill",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills - icon",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "option": "pill",
+            "icon": "cart-f",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          },
+          {
+            "component": "Button",
+            "type": "default",
+            "option": "pill",
+            "icon": "cart-f",
+            "iconPositionLeft": "true",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills - outline",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "outline",
+            "option": "pill",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills - disabled",
+          "jp": "Pills - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "type": "default",
+            "option": "pill",
+            "disabled": "true",
+            "text": {
+              "en": "Button",
+              "jp": "ボタン"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Circular chevron left",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "innerIcon": "chevron-left",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-left",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Circular chevron right",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "innerIcon": "chevron-right",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-right",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Circular plus",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "innerIcon": "plus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "plus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Circular minus",
+          "jp": "アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "innerIcon": "minus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "minus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Back to top",
+          "jp": "トップへ"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "innerIcon": "chevron-top",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "circle",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-top",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link",
+          "jp": "リンク"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link with icon",
+          "jp": "アイコンリンク"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link",
+            "icon": "cart-f",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link",
+            "icon": "cart-f",
+            "iconPositionLeft": "true",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link - disabled",
+          "jp": "リンク - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link",
+            "disabled": "true",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link button",
+          "jp": "リンクボタン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "text": {
+              "en": "link button",
+              "jp": "link button"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link button with icon",
+          "jp": "アイコンリンクボタン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "icon": "cart-f",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "icon": "cart-f",
+            "iconPositionLeft": "true",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills Link button",
+          "jp": "Pills Link button"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "option": "pill",
+            "text": {
+              "en": "link button",
+              "jp": "link button"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Pills link button with icon",
+          "jp": "アイコンリンクボタン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "option": "pill",
+            "icon": "cart-f",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "option": "pill",
+            "icon": "cart-f",
+            "iconPositionLeft": "true",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Link button - disabled",
+          "jp": "リンクボタン - disabled"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "link button",
+            "disabled": "true",
+            "text": {
+              "en": "link",
+              "jp": "link"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Loading",
+          "jp": "ローディング"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "",
+            "icon": "loading",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "",
+            "option": "pill",
+            "icon": "loading",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Loading - outline",
+          "jp": "ローディング - アウトライン"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "outline",
+            "icon": "loading",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "outline",
+            "option": "pill",
+            "icon": "loading",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Success",
+          "jp": "サクセス"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "",
+            "optionalState": "success",
+            "text": {
+              "en": "Submitted",
+              "jp": "Submitted"
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "",
+            "option": "pill",
+            "optionalState": "success",
+            "text": {
+              "en": "Submitted",
+              "jp": "Submitted"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Success - outline",
+          "jp": "サクセス"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "size": "",
+            "type": "outline",
+            "optionalState": "success",
+            "text": {
+              "en": "Submitted",
+              "jp": "Submitted"
+            }
+          },
+          {
+            "component": "Button",
+            "size": "",
+            "type": "outline",
+            "option": "pill",
+            "optionalState": "success",
+            "text": {
+              "en": "Submitted",
+              "jp": "Submitted"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

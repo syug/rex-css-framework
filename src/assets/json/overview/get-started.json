@@ -1,0 +1,15 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Get started",
+          "jp": "始めよう"
+        }
+      }
+    ]
+  }
+]

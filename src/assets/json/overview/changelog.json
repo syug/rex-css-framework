@@ -1,0 +1,15 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Changelog",
+          "jp": "変更履歴"
+        }
+      }
+    ]
+  }
+]

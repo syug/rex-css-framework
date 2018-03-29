@@ -1,0 +1,589 @@
+[
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Colors",
+          "jp": "カラー"
+        }
+      },
+      {
+        "component": "Text",
+        "type": "lead",
+        "text": {
+          "en": "Hex values and Sass variables for all ReX colors specified by the COED BRED team.",
+          "jp": "日本語"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "type": "row",
+    "data": [
+      {
+        "component": "Column",
+        "cols": "12",
+        "data": [
+          {
+            "component": "Heading",
+            "type": "h4",
+            "text": {
+              "en": "Brand colors",
+              "jp": "日本語"
+            }
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "bf0000",
+            "variable": "red-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "ffa000",
+            "variable": "yellow-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "4bcd00",
+            "variable": "green-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "00a0f0",
+            "variable": "blue-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "002896",
+            "variable": "dark-blue-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "7D00BE",
+            "variable": "purple-brand"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "3",
+        "data": [
+          {
+            "component": "BrandColor",
+            "color": "FF41BE",
+            "variable": "pink-brand"
+          }
+        ]
+      } 
+    ]
+  },
+  {
+    "component": "Section",
+    "className": "white-section",
+    "type": "row",
+    "data": [
+      {
+        "component": "Column",
+        "cols": "12",
+        "data": [
+          {
+            "component": "Heading",
+            "type": "h4",
+            "text": {
+              "en": "Color variations",
+              "jp": "日本語"
+            }
+          },
+          {
+            "component": "Text",
+            "text": {
+              "en": "Sass variables are provided for the following variations of sub-brand colors:",
+              "jp": "日本語"
+            }
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "F7F7F7",
+            "variable": "gray-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "EBEBEB",
+            "variable": "gray-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "D1D1D1",
+            "variable": "gray-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "B6B6B6",
+            "variable": "gray-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "9C9C9C",
+            "variable": "gray-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "828282",
+            "variable": "gray"
+          },
+          {
+            "component": "Swatch",
+            "color": "686868",
+            "variable": "gray-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "4D4D4D",
+            "variable": "gray-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "333333",
+            "variable": "gray-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "FFF7F7",
+            "variable": "red-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFDBDB",
+            "variable": "red-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "F9AAAA",
+            "variable": "red-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "F37979",
+            "variable": "red-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "EC4848",
+            "variable": "red-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "E61717",
+            "variable": "red"
+          },
+          {
+            "component": "Swatch",
+            "color": "BF0000",
+            "variable": "red-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "930A0A",
+            "variable": "red-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "661414",
+            "variable": "red-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "FFFBF5",
+            "variable": "yellow-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFEDD1",
+            "variable": "yellow-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFD38B",
+            "variable": "yellow-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFBA46",
+            "variable": "yellow-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFA000",
+            "variable": "yellow-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "D98B09",
+            "variable": "yellow"
+          },
+          {
+            "component": "Swatch",
+            "color": "B37612",
+            "variable": "yellow-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "8C611B",
+            "variable": "yellow-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "664C24",
+            "variable": "yellow-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "FAFFF7",
+            "variable": "green-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "E8F7E1",
+            "variable": "green-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "B4E996",
+            "variable": "green-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "7FDB4B",
+            "variable": "green-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "4BCD00",
+            "variable": "green-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "44B007",
+            "variable": "green"
+          },
+          {
+            "component": "Swatch",
+            "color": "3E930E",
+            "variable": "green-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "377614",
+            "variable": "green-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "30591B",
+            "variable": "green-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "F7FCFF",
+            "variable": "blue-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "DAF1FC",
+            "variable": "blue-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "A3DDF9",
+            "variable": "blue-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "6DC9F6",
+            "variable": "blue-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "37B4F3",
+            "variable": "blue-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "00A0F0",
+            "variable": "blue"
+          },
+          {
+            "component": "Swatch",
+            "color": "0783C2",
+            "variable": "blue-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "0D6794",
+            "variable": "blue-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "144A66",
+            "variable": "blue-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "F9FBFF",
+            "variable": "dark-blue-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "E1E9FF",
+            "variable": "dark-blue-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "B4C5F5",
+            "variable": "dark-blue-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "87A2EB",
+            "variable": "dark-blue-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "5A7EE0",
+            "variable": "dark-blue-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "2D5BD6",
+            "variable": "dark-blue"
+          },
+          {
+            "component": "Swatch",
+            "color": "0037CC",
+            "variable": "dark-blue-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "002896",
+            "variable": "dark-blue-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "122459",
+            "variable": "dark-blue-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "FDF9FF",
+            "variable": "purple-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "F6E3FF",
+            "variable": "purple-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "E0ADF9",
+            "variable": "purple-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "CA78F3",
+            "variable": "purple-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "B342EC",
+            "variable": "purple-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "9D0CE6",
+            "variable": "purple"
+          },
+          {
+            "component": "Swatch",
+            "color": "7D00BE",
+            "variable": "purple-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "640A92",
+            "variable": "purple-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "4B1466",
+            "variable": "purple-darkest"
+          }
+        ]
+      },
+      {
+        "component": "Column",
+        "cols": "6",
+        "className": "with-swatch",
+        "data": [
+          {
+            "component": "Swatch",
+            "color": "FFF8FD",
+            "variable": "pink-lightest",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFE0F5",
+            "variable": "pink-lighter",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FFB8E7",
+            "variable": "pink-light",
+            "className": "dark-text"
+          },
+          {
+            "component": "Swatch",
+            "color": "FF91DA",
+            "variable": "pink-medium-light"
+          },
+          {
+            "component": "Swatch",
+            "color": "FF69CC",
+            "variable": "pink-medium"
+          },
+          {
+            "component": "Swatch",
+            "color": "FF41BE",
+            "variable": "pink"
+          },
+          {
+            "component": "Swatch",
+            "color": "CC399A",
+            "variable": "pink-dark"
+          },
+          {
+            "component": "Swatch",
+            "color": "993175",
+            "variable": "pink-darker"
+          },
+          {
+            "component": "Swatch",
+            "color": "662951",
+            "variable": "pink-darkest"
+          }
+        ]
+      }
+    ]
+  }
+]

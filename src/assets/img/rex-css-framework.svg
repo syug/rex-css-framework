@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="140px" height="79px" viewBox="0 0 140 79" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>REX CSS framework@1x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="ReX-Logos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="White-bg" transform="translate(-351.000000, -120.000000)" fill="#B6B6B6">
+            <g id="REX-CSS-framework" transform="translate(351.000000, 120.000000)">
+                <g id="Title">
+                    <path d="M12.128,10.416 L12.128,28.632 L19.112,28.632 C23.936,28.632 27.896,24.528 27.896,19.488 C27.896,14.52 23.864,10.416 19.112,10.416 L12.128,10.416 Z M12.128,57 L1.328,57 L1.328,0.336 L19.112,0.336 C30.56,0.336 39.416,8.76 39.416,19.56 C39.416,27.12 36.536,32.376 30.776,35.184 L44.96,57 L31.352,57 L20.552,38.712 L12.128,38.712 L12.128,57 Z" id="R"></path>
+                    <polygon id="X" points="139.336 57 121.552 28.344 138.472 0.336 125.584 0.336 113.92 20.136 102.256 0.336 89.368 0.336 106.288 28.344 88.504 57 101.824 57 113.92 36.984 126.016 57"></polygon>
+                    <text id="CSS-FRAMEWORK" font-family="RakutenGlobal-B, Rakuten Global" font-size="15.8000002" font-weight="bold">
+                        <tspan x="0" y="78">CSS FRAMEWORK</tspan>
+                    </text>
+                    <path d="M57.766,29.267 L74.114,29.267 C73.109,24.242 70.295,21.629 66.007,21.629 C61.92,21.629 58.838,24.443 57.766,29.267 Z M75.722,42.6 L84.432,47.625 C79.675,54.124 74.315,57.072 67.28,57.072 C55.153,57.072 46.443,47.826 46.443,34.962 C46.443,22.366 54.952,12.718 65.94,12.718 C76.794,12.718 85.437,22.567 85.437,34.761 C85.437,35.833 85.37,36.771 85.236,37.843 L57.565,37.843 C58.235,43.806 62.054,47.491 67.548,47.491 C70.563,47.491 73.31,45.816 75.722,42.6 Z" id="e"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

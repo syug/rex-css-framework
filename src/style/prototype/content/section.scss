@@ -1,0 +1,124 @@
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: inline-block;
+  width: 100%;
+  &.white-section {
+    background: $white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    + .white-section {
+      margin-top: -48px;
+      padding-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 96px;
+    }
+  }
+  * {
+    @extend .rex-motion.fadeIn
+  }
+  & p:last-child,
+  & ul:last-child,
+  & ol:last-child,
+  & h1:last-child,
+  & h3:last-child,
+  & h4:last-child,
+  & h5:last-child,
+  {
+    margin-bottom: 0;
+  }
+  div.centered-content {
+    max-width: $content-width;
+    margin: 0 auto;
+  }
+  &.front-page-blockquote {
+    blockquote {
+      max-width: 368px;
+      margin: 24px auto;
+      padding: 24px 0;
+    }
+  }
+  &.grayed-out-section {
+    background-color: $gray-lighter !important;
+    margin: 72px 0 40px;
+  }
+  &.section-in-column {
+    padding-top: 0;
+    padding-bottom: 80px;
+  }
+  &.last-section-in-column {
+    padding: 0;
+  }
+  &.downloads-with-release-notes {
+    >div {
+      >h3,
+      >a {
+        display: inline-block;
+      }
+      >a {
+        margin-left: 48px;
+      }
+      & p:last-child {
+        margin-top: 24px;
+        display: inline-block;
+      }
+    }
+  }
+  p+img,
+  p+div.row,
+  .table+img {
+    margin-top: 40px;
+  }
+  .square-frame+p,
+  img+.working-example,
+  .row+.row,
+  .download-component+p {
+    margin-top: 24px;
+  }
+  .download-component+p {
+    display: inline-block;
+  }
+  .download-component {
+    &.red {
+      a {
+        color: $red-brand;
+      }
+    }
+    &.yellow {
+      a {
+        color: $yellow-brand;
+      }
+    }
+    &.green {
+      a {
+        color: $green-brand;
+      }
+    }
+    &.blue {
+      a {
+        color: $blue-brand;
+      }
+    }
+    &.dark-blue {
+      a {
+        color: $dark-blue-brand;
+      }
+    }
+    &.purple {
+      a {
+        color: $purple-brand;
+      }
+    }
+    &.pink {
+      a {
+        color: $pink-brand;
+      }
+    }
+  }
+  img+p {
+    margin-top: 16px;
+  }
+}
