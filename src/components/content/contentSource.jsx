@@ -12,7 +12,7 @@ import { Download } from './atoms/download';
 import InputGroup from './atoms/input-group';
 import { LabelAndCheckbox } from './atoms/label-and-checkbox';
 import { Select } from './atoms/select';
-import { TextArea } from './atoms/text-area';
+import TextArea from './atoms/text-area';
 import { Icon } from './atoms/icon';
 import { Image } from './atoms/image';
 import { Table } from './atoms/table';
