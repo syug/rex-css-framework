@@ -12,7 +12,7 @@ import { Download } from './atoms/download';
 import InputGroup from './atoms/input-group';
 import { LabelAndCheckbox } from './atoms/label-and-checkbox';
 import { Select } from './atoms/select';
-import TextArea from './atoms/text-area';
+import { TextArea } from './atoms/text-area';
 import { Icon } from './atoms/icon';
 import { Image } from './atoms/image';
 import { Table } from './atoms/table';
@@ -49,6 +49,7 @@ import Breadcrumbs from './molecules/breadcrumbs';
 import Tabs from './molecules/tabs';
 import Dropdowns from './molecules/dropdowns';
 import Badges from './molecules/badges';
+import Cards from './molecules/cards';
 
 // organisms
 
@@ -107,6 +108,11 @@ export function ComponentSelector(data, tabTarget, lang, key) {
     case 'Alerts':
       return (
         <Alerts text={data.text} htmlText={data.htmlText ? data.htmlText[lang] : null} type={data.type} icon={data.icon} iconType={data.iconType} omitClose={data.omitClose} key={key} />
+      );
+
+    case 'Cards':
+      return (
+        <Cards type={data.type} header={data.header} price={data.price} currency={data.currency} description={data.description} size={data.size} image={data.image} />
       );
 
     case 'Pagination':
