@@ -11,5 +11,111 @@
         }
       }
     ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Full Image",
+          "jp": "Full Image"
+        }
+      }
+    ]
+  },
+    {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "image"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Card",
+          "jp": "Card"
+        }
+      }
+    ]
+  },
+    {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "card"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Marketing Carousel",
+          "jp": "Marketing Carousel"
+        }
+      }
+    ]
+  },
+    {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "marketing"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Cards",
+            "type": "size",
+            "size": "landscape",
+            "header": "Rakuten Travel",
+            "description": "According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+          }
+        ]
+      }
+    ]
   }
 ]

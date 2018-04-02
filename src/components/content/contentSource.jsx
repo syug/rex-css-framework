@@ -47,10 +47,12 @@ import Alerts from './molecules/alerts';
 import Pagination from './molecules/pagination';
 import Breadcrumbs from './molecules/breadcrumbs';
 import Tabs from './molecules/tabs';
+import Cards from './molecules/cards';
 import Dropdowns from './molecules/dropdowns';
 import Badges from './molecules/badges';
 
 // organisms
+import Carousels from './organisms/carousels';
 
 // site
 import { IconPicker } from './site/IconPicker';
@@ -64,6 +66,16 @@ const Assets = require.context('assets/img', false);
 // this can props be a loop based of imported compnents
 export function ComponentSelector(data, tabTarget, lang, key) {
   switch (data.component) {
+    case 'Carousels':
+      return (
+        <Carousels title={data.title} type={data.type} key={key} />
+      );
+
+    case 'Cards':
+      return (
+        <Cards type={data.type} header={data.header} price={data.price} currency={data.currency} description={data.description} size={data.size} />
+      );
+
     case 'Slider':
       return (
         <Slider disabled={data.disabled} type={data.type} icon={data.icon} iconType={data.iconType} key={key} />

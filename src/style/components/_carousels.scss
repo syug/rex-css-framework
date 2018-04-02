@@ -1,0 +1,259 @@
+.carousel {
+  &.image {
+    position: relative;
+    max-width: 1256px;
+    // overflow: hidden;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: $black;
+      display: inline-block;
+
+    }
+    .buttons {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      .button {
+        color: #00A0F0;
+        text-decoration: none;
+        &:not(:first-of-type)::before {
+          content: "";
+          margin-left: 6px;
+        }
+      }
+    }
+    .carousel-inner {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 24px;
+    }
+    .carousel-item {
+      margin-left: 4px;
+      margin-right: 4px;
+      .title {
+        color: $white;
+      }
+    }
+    .btn.btn-circle {
+      background-color: $white;
+      color: $brand-primary;
+    }
+    > .previous, .next {
+      position: absolute;
+      top: 150px;
+    }
+    > .previous {
+      left: 18px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+    > .next {
+      right: 18px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .indicator-group {
+      margin-top: 0.75em;
+      text-align: center;
+      .indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        margin: 2px;
+        background-color: $white;
+        border: 1px solid $brand-primary;
+        &.active {
+          background-color: $brand-primary;
+        }
+      }
+    }
+  }
+  &.card, &.tab {
+    position: relative;
+    max-width: 1200px;
+    // overflow: hidden;
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      color: $black;
+      display: inline-block;
+    }
+    .buttons {
+      position: absolute;
+      right: 0;
+      top: 12px;
+      .button {
+        color: #00A0F0;
+        text-decoration: none;
+        &:not(:first-of-type)::before {
+          content: "";
+          margin-left: 6px;
+        }
+      }
+    }
+    .carousel-inner {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 24px;
+    }
+    .carousel-item {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+    .btn.btn-circle {
+      background-color: $white;
+      color: $brand-primary;
+    }
+    .previous, .next {
+      position: absolute;
+      top: 245px;
+    }
+    .previous {
+      left: -12px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .next {
+      right: -16px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .indicator-group {
+      margin-top: 0.75em;
+      text-align: center;
+      .indicator {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        margin: 2px;
+        background-color: $white;
+        border: 1px solid $brand-primary;
+        &.active {
+          background-color: $brand-primary;
+        }
+      }
+    }
+  }
+  &.marketing {
+    position: relative;
+    // overflow: hidden;
+    // .title {
+    //   font-size: 24px;
+    //   font-weight: bold;
+    //   color: $black;
+    //   display: inline-block;
+    // }
+    // .buttons {
+    //   position: absolute;
+    //   right: 0;
+    //   top: 12px;
+    //   .button {
+    //     color: #00A0F0;
+    //     text-decoration: none;
+    //     &:not(:first-of-type)::before {
+    //       content: "";
+    //       margin-left: 6px;
+    //     }
+    //   }
+    // }
+    .introduction {
+      // background-color: burlywood;
+      position: absolute;
+      top: 25%;
+      left: 15%;
+      z-index: 3;
+      color: $white;
+      .text {
+        font-size: 0.8em;
+      }
+      .title {
+        font-size: 52px;
+        line-height: 52px;
+        width: 546px;
+      }
+      .buttons {
+        margin-top: 8px;
+      }
+
+    }
+    .carousel-inner {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 24px;
+      // 追記
+      // position: relative;
+      // width: 100%;
+      // &::before {
+      //   display: block;
+      //   padding-top: 75%;
+      //   background-color: blue;
+      //   content: "";
+      // }
+    }
+    .carousel-item {
+      // margin-left: 4px;
+      // margin-right: 4px;
+
+      // 追記その2
+      // position: absolute;
+      // top: 0;
+      // right: 0;
+      // bottom: 0;
+      // left: 0;
+      // img {
+      //   width: auto;
+      //   height: auto;
+      //   max-width: 100%;
+      //   max-height: 100%;
+      // }
+      // 追記
+      position: relative;
+      width: 100%;
+      &::before {
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    .btn.btn-circle {
+      background-color: $white;
+      color: $brand-primary;
+    }
+    .previous, .next {
+      position: absolute;
+      top: 245px;
+    }
+    .previous {
+      left: -12px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+    .next {
+      right: -16px;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+      }
+    }
+  }
+}
