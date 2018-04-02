@@ -11,7 +11,7 @@ $stepper-border-clicked: solid 2px $brand-primary;
   .stepper-plus {
     position: relative;
     z-index: 0;
-    background: $white;
+    background-color: transparent;
     width: 40px;
     border: $stepper-border;
     display: inline-block;
@@ -19,6 +19,7 @@ $stepper-border-clicked: solid 2px $brand-primary;
     cursor: pointer;
     .rex-icon {
       color: $gray-medium-light;
+      font-weight: bold;
     }
     &.clicked,
     &:active,
@@ -33,7 +34,7 @@ $stepper-border-clicked: solid 2px $brand-primary;
     &.clicked,
     &:active,
     &:focus {
-      background: $brand-primary;
+      background-color: $brand-primary;
       border: $stepper-border-clicked;
       i {
         color: $white;
@@ -47,7 +48,7 @@ $stepper-border-clicked: solid 2px $brand-primary;
     &.clicked,
     &:active,
     &:focus {
-      background: $brand-primary;
+      background-color: $brand-primary;
       border: $stepper-border-clicked;
       i {
         color: $white;
@@ -58,7 +59,7 @@ $stepper-border-clicked: solid 2px $brand-primary;
     .stepper-plus,
     .stepper-minus {
       border-color: $gray-light;
-      background-color: $white;
+      background-color: transparent;
       cursor: initial;
       .rex-icon {
         color: $gray-light;
