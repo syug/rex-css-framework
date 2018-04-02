@@ -380,11 +380,6 @@
           {
             "component": "Checkbox",
             "text": "Checkbox"
-          },
-          {
-            "component": "Checkbox",
-            "text": "Checkbox",
-            "type": "rounded"
           }
         ]
       }
