@@ -2,25 +2,40 @@ import * as React from 'react';
 import { Icon } from '../atoms/icon';
 
 export default function Badges(props) {
-  let badgeClasses = 'badge';
-  const { text, icon, iconType } = props;
+  const classes = {
+    badgeWrapper: 'badge',
+    badge: 'badge',
+  };
+  const { text, icon, iconType, linkLabel } = props;
+  let content;
+
   switch (props.type) {
     case 'round':
-      badgeClasses += ' round';
+      classes.badge += ' round';
       break;
     case 'pill':
-      badgeClasses += ' pill';
+      classes.badge += ' pill';
       break;
     case 'empty':
-      badgeClasses += ' empty';
+      classes.badge += ' empty';
       break;
     default:
   }
 
+  if (icon) {
+    content = <Icon type={iconType} name={icon} />;
+    classes.badgeWrapper = 'badge icon';
+  }
+
+  if (linkLabel) {
+    content = <a>{linkLabel}</a>;
+    classes.badgeWrapper = 'badge link';
+  }
+
   return (
-    <span className="badge">
-      {icon ? (<Icon type={iconType} name={icon} />) : null}
-      <span className={badgeClasses}>{text}</span>
+    <span className={classes.badgeWrapper}>
+      {content}
+      <span className={classes.badge}>{text}</span>
     </span>
   );
 }
