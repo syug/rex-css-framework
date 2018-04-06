@@ -1,4 +1,17 @@
 .tab {
+  position: relative;
+  display: inline-block;
+  // underline
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: -24%;
+    background-color: $gray-light;
+    z-index: 0;
+  }
   a.item {
     text-decoration: none;
   }
@@ -7,6 +20,11 @@
     color: $gray-medium;
     padding: 7.5px 17.5px;
     border-bottom: 1px solid $gray-light;
+    position: relative;
+    z-index: 1;
+    &:not(:last-of-type) {
+      margin-right: 32px;
+    }
   }
   .active {
     color: $brand-primary;
@@ -64,6 +82,9 @@
     }
   }
   &.border-top {
+    &:before {
+      top: -20%;
+    }
     .item {
       border-top: 1px solid $gray-light;
       border-bottom: none;
@@ -76,6 +97,9 @@
     }
   }
   &.mobile {
+    &:before {
+      display: none;
+    }
     .item {
       border-bottom: none;
       &.active {
