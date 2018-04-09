@@ -233,14 +233,17 @@ a.btn {
 .btn-square {
   padding: 0;
   border: none;
-  font-size: ($font-size-base / $icon-size * 16);//($font-size-base / $icon-size * 16);
-  line-height: 32px;
-  width: 32px;
-  height: 32px; // icon center alignment
+  font-size: 24px;
+  line-height: 40px;
+  width: 40px;
+  height: 40px; // icon center alignment
   border-radius: 4px;
-  &::after {
-    @extend %backToTopStyle;
+  &.chevron-top {
+    &::after {
+      @extend %backToTopStyle;
+    }
   }
+
   &.btn-outline {
     @extend %btn-circle-outline;
   }
@@ -251,10 +254,10 @@ a.btn {
   position: relative;
   border: none;
   border-radius: 100%;
-  line-height: 32px;
-  font-size: ($font-size-base / $icon-size * 16);
-  width: 32px;
-  height: 32px; // icon center alignment
+  line-height: 40px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px; // icon center alignment
   &:before {
     position: absolute;
   }
@@ -291,21 +294,21 @@ a.btn {
   }
   &.chevron-left {
     &:before {
-      left: 5px !important;
+      left: 7px !important;
     }
     &.btn-outline {
       &:before {
-        left: 4px !important;
+        left: 6px !important;
       }
     }
   }
   &.chevron-right {
     &:before {
-      right: 5px !important;
+      right: 7px !important;
     }
     &.btn-outline {
       &:before {
-        right: 4px !important;
+        right: 6px !important;
       }
     }
   } // colors
