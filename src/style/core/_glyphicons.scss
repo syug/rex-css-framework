@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("../fonts/rex-icon.eot?73c59a8e69fac2f71e8a792c2a81db8d?#iefix") format("embedded-opentype"),
-url("../fonts/rex-icon.woff2?73c59a8e69fac2f71e8a792c2a81db8d") format("woff2"),
-url("../fonts/rex-icon.woff?73c59a8e69fac2f71e8a792c2a81db8d") format("woff");
+  src: url("../fonts/rex-icon.eot?72f6d48bcfe0f0055972e4d2243a8e34?#iefix") format("embedded-opentype"),
+url("../fonts/rex-icon.woff2?72f6d48bcfe0f0055972e4d2243a8e34") format("woff2"),
+url("../fonts/rex-icon.woff?72f6d48bcfe0f0055972e4d2243a8e34") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
@@ -148,72 +148,74 @@ $_32-qrcode-f: '\f18c';
 $_32-qrcode-l: '\f18d';
 $_32-rakuten-account-f: '\f18e';
 $_32-rakuten-account-l: '\f18f';
-$_32-rakuten-registration-f: '\f190';
-$_32-rakuten-registration-l: '\f191';
-$_32-ranking-f: '\f192';
-$_32-ranking-l: '\f193';
-$_32-refresh: '\f194';
-$_32-review-comment-f: '\f195';
-$_32-review-comment-l: '\f196';
-$_32-review-edit-f: '\f197';
-$_32-review-edit-l: '\f198';
-$_32-rss-symbol-l: '\f199';
-$_32-rss-text-f: '\f19a';
-$_32-rss-text-l: '\f19b';
-$_32-save-f: '\f19c';
-$_32-save-l: '\f19d';
-$_32-search-history-f: '\f19e';
-$_32-search-history-l: '\f19f';
-$_32-search: '\f1a0';
-$_32-security-f: '\f1a1';
-$_32-security-l: '\f1a2';
-$_32-server-f: '\f1a3';
-$_32-server-l: '\f1a4';
-$_32-settings-f: '\f1a5';
-$_32-settings-l: '\f1a6';
-$_32-share-f: '\f1a7';
-$_32-share-l: '\f1a8';
-$_32-shop-f: '\f1a9';
-$_32-shop-l: '\f1aa';
-$_32-sign-ban-f: '\f1ab';
-$_32-sign-ban-l: '\f1ac';
-$_32-sign-help-f: '\f1ad';
-$_32-sign-help-l: '\f1ae';
-$_32-sign-info-f: '\f1af';
-$_32-sign-info-l: '\f1b0';
-$_32-sign-warning-f: '\f1b1';
-$_32-sign-warning-l: '\f1b2';
-$_32-sliders-f: '\f1b3';
-$_32-sliders-l: '\f1b4';
-$_32-smartphone-f: '\f1b5';
-$_32-smartphone-l: '\f1b6';
-$_32-survey-f: '\f1b7';
-$_32-survey-l: '\f1b8';
-$_32-switch-language-f: '\f1b9';
-$_32-switch-language-l: '\f1ba';
-$_32-tablet-f: '\f1bb';
-$_32-tablet-l: '\f1bc';
-$_32-tag-f: '\f1bd';
-$_32-tag-l: '\f1be';
-$_32-test: '\f1bf';
-$_32-time-f: '\f1c0';
-$_32-time-l: '\f1c1';
-$_32-train-f: '\f1c2';
-$_32-train-l: '\f1c3';
-$_32-upload-f: '\f1c4';
-$_32-upload-l: '\f1c5';
-$_32-voice-input-f: '\f1c6';
-$_32-voice-input-l: '\f1c7';
-$_32-walking-f: '\f1c8';
-$_32-world-f: '\f1c9';
-$_32-world-l: '\f1ca';
-$_32-x: '\f1cb';
-$_32-zip-f: '\f1cc';
-$_32-zip-l: '\f1cd';
-$_32-zoom-in-f: '\f1ce';
-$_32-zoom-in-l: '\f1cf';
-$_32-zoom-out-f: '\f1d0';
-$_32-zoom-out-l: '\f1d1';
+$_32-rakuten-close-account-f: '\f190';
+$_32-rakuten-close-account-l: '\f191';
+$_32-rakuten-registration-f: '\f192';
+$_32-rakuten-registration-l: '\f193';
+$_32-ranking-f: '\f194';
+$_32-ranking-l: '\f195';
+$_32-refresh: '\f196';
+$_32-review-comment-f: '\f197';
+$_32-review-comment-l: '\f198';
+$_32-review-edit-f: '\f199';
+$_32-review-edit-l: '\f19a';
+$_32-rss-symbol-l: '\f19b';
+$_32-rss-text-f: '\f19c';
+$_32-rss-text-l: '\f19d';
+$_32-save-f: '\f19e';
+$_32-save-l: '\f19f';
+$_32-search-history-f: '\f1a0';
+$_32-search-history-l: '\f1a1';
+$_32-search: '\f1a2';
+$_32-security-f: '\f1a3';
+$_32-security-l: '\f1a4';
+$_32-server-f: '\f1a5';
+$_32-server-l: '\f1a6';
+$_32-settings-f: '\f1a7';
+$_32-settings-l: '\f1a8';
+$_32-share-f: '\f1a9';
+$_32-share-l: '\f1aa';
+$_32-shop-f: '\f1ab';
+$_32-shop-l: '\f1ac';
+$_32-sign-ban-f: '\f1ad';
+$_32-sign-ban-l: '\f1ae';
+$_32-sign-help-f: '\f1af';
+$_32-sign-help-l: '\f1b0';
+$_32-sign-info-f: '\f1b1';
+$_32-sign-info-l: '\f1b2';
+$_32-sign-warning-f: '\f1b3';
+$_32-sign-warning-l: '\f1b4';
+$_32-sliders-f: '\f1b5';
+$_32-sliders-l: '\f1b6';
+$_32-smartphone-f: '\f1b7';
+$_32-smartphone-l: '\f1b8';
+$_32-survey-f: '\f1b9';
+$_32-survey-l: '\f1ba';
+$_32-switch-language-f: '\f1bb';
+$_32-switch-language-l: '\f1bc';
+$_32-tablet-f: '\f1bd';
+$_32-tablet-l: '\f1be';
+$_32-tag-f: '\f1bf';
+$_32-tag-l: '\f1c0';
+$_32-test: '\f1c1';
+$_32-time-f: '\f1c2';
+$_32-time-l: '\f1c3';
+$_32-train-f: '\f1c4';
+$_32-train-l: '\f1c5';
+$_32-upload-f: '\f1c6';
+$_32-upload-l: '\f1c7';
+$_32-voice-input-f: '\f1c8';
+$_32-voice-input-l: '\f1c9';
+$_32-walking-f: '\f1ca';
+$_32-world-f: '\f1cb';
+$_32-world-l: '\f1cc';
+$_32-x: '\f1cd';
+$_32-zip-f: '\f1ce';
+$_32-zip-l: '\f1cf';
+$_32-zoom-in-f: '\f1d0';
+$_32-zoom-in-l: '\f1d1';
+$_32-zoom-out-f: '\f1d2';
+$_32-zoom-out-l: '\f1d3';
 
 .rex-icon {
   -webkit-font-smoothing: antialiased;
@@ -4653,6 +4655,68 @@ $_32-zoom-out-l: '\f1d1';
     &.rakuten-account-s {
       &::before {
         content: $_16-rakuten-account;
+      }
+    }
+  }
+  @if variable-exists('_32-rakuten-close-account') {
+    &.rakuten-close-account {
+      &::before {
+        content: $_32-rakuten-close-account;
+      }
+    }
+  }
+
+  @if variable-exists('_32-rakuten-close-account-f') {
+    &.rakuten-close-account-f {
+      &::before {
+        content: $_32-rakuten-close-account-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-rakuten-close-account-l') {
+    &.rakuten-close-account-l {
+      &::before {
+        content: $_32-rakuten-close-account-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-rakuten-close-account') {
+    &.rakuten-close-account-s {
+      &::before {
+        content: $_16-rakuten-close-account;
+      }
+    }
+  }
+  @if variable-exists('_32-rakuten-close-account') {
+    &.rakuten-close-account {
+      &::before {
+        content: $_32-rakuten-close-account;
+      }
+    }
+  }
+
+  @if variable-exists('_32-rakuten-close-account-f') {
+    &.rakuten-close-account-f {
+      &::before {
+        content: $_32-rakuten-close-account-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-rakuten-close-account-l') {
+    &.rakuten-close-account-l {
+      &::before {
+        content: $_32-rakuten-close-account-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-rakuten-close-account') {
+    &.rakuten-close-account-s {
+      &::before {
+        content: $_16-rakuten-close-account;
       }
     }
   }
