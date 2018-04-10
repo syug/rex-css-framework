@@ -31,6 +31,21 @@
   }
 }
 
+%plus-minus-btn {
+  &:before {
+    left: 1px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &.btn-outline {
+    &:before {
+      left: 1.5px;
+      top: -1px;
+    }
+  }
+}
+
 //
 // Buttons
 // --------------------------------------------------
@@ -232,18 +247,31 @@ a.btn {
 
 .btn-square {
   padding: 0;
+  position: relative;
   border: none;
   font-size: 24px;
   line-height: 40px;
   width: 40px;
   height: 40px; // icon center alignment
   border-radius: 4px;
+  &:before {
+    position: absolute;
+  }
   &.chevron-top {
     &::after {
       @extend %backToTopStyle;
     }
   }
-
+  &.chevron-left {
+    @include chevron-horizontal-style("right", 8px, 7px);
+  }
+  &.chevron-right {
+    @include chevron-horizontal-style("right", 6px, 5px);
+  }
+  &.plus,
+  &.minus {
+    @extend %plus-minus-btn;
+  }
   &.btn-outline {
     @extend %btn-circle-outline;
   }
@@ -263,18 +291,7 @@ a.btn {
   }
   &.plus,
   &.minus {
-    &:before {
-      left: 1px;
-      right: 0px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    &.btn-outline {
-      &:before {
-        left: 1.5px;
-        top: -1px;
-      }
-    }
+    @extend %plus-minus-btn;
   }
   &.chevron-top {
     &::after {
@@ -293,24 +310,10 @@ a.btn {
     }
   }
   &.chevron-left {
-    &:before {
-      left: 7px !important;
-    }
-    &.btn-outline {
-      &:before {
-        left: 6px !important;
-      }
-    }
+    @include chevron-horizontal-style("left", 7px, 6px);
   }
   &.chevron-right {
-    &:before {
-      right: 7px !important;
-    }
-    &.btn-outline {
-      &:before {
-        right: 6px !important;
-      }
-    }
+    @include chevron-horizontal-style("right", 7px, 6px);
   } // colors
   &.btn-outline {
     @extend %btn-circle-outline;
