@@ -9,7 +9,7 @@ const plugins = [
   }),
   new webpack.HotModuleReplacementPlugin(),
   new HtmlWebpackPlugin({
-    title: 'Rex Platform',
+    title: 'Rex CSS Framework',
     template: './src/index.html',
   }),
 ];
