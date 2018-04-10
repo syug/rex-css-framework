@@ -5,7 +5,7 @@
   &:before {
     position: absolute;
     content: "";
-    width: 100%;
+    width: 99%;
     height: 1px;
     left: 0;
     bottom: -24%;
@@ -39,6 +39,10 @@
     padding-left: 32px;
     display: inline-block;
     position: relative;
+    &:before {
+      width: calc(99% - 64px);
+      left: 32px;
+    }
     .previous {
       &::before {
         content: $_32-chevron-left;
