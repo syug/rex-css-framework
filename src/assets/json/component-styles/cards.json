@@ -232,5 +232,87 @@
         ]
       }
     ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Overflow Menu",
+          "jp": "Overflow Menu"
+        }
+      },
+      {
+        "component": "Heading",
+        "type": "h6",
+        "text": {
+          "en": "Normal",
+          "jp": "Normal"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Cards",
+            "type": "panel",
+            "header": "Hakone Onsen",
+            "price": "10,926",
+            "currency": "円",
+            "image": "img/onsen.png",
+            "submenu": "normal"
+          }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h6",
+        "text": {
+          "en": "Small",
+          "jp": "Small"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Cards",
+            "type": "panel",
+            "header": "Hakone Onsen",
+            "price": "10,926",
+            "currency": "円",
+            "image": "img/onsen.png",
+            "submenu": "small"
+          }
+        ]
+      },
+      {
+        "component": "Heading",
+        "type": "h6",
+        "text": {
+          "en": "Full",
+          "jp": "Full"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Cards",
+            "type": "panel",
+            "header": "Hakone Onsen",
+            "price": "10,926",
+            "currency": "円",
+            "image": "img/onsen.png",
+            "submenu": "full"
+          }
+        ]
+      }
+    ]
   }
 ]

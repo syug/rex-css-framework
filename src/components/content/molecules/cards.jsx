@@ -42,7 +42,11 @@ export function cardsWithText(type, header, description) {
   );
 }
 
-export function panel(header, price, currency, image) {
+export function panel(header, price, currency, image, submenu) {
+  let overflowMenu;
+  if (submenu) {
+    overflowMenu = <OverflowMenu submenu={submenu} />;
+  }
   return (
     <div className="card panel">
       <CardMedia>
@@ -70,6 +74,7 @@ export function panel(header, price, currency, image) {
           <a className="button"><span className="more" /></a>
         </CardAction>
       </CardContent>
+      {overflowMenu}
     </div>
   );
 }
@@ -135,7 +140,7 @@ export default function Cards(props) {
       break;
     }
     case 'panel': {
-      content = panel(props.header, props.price, props.currency, image);
+      content = panel(props.header, props.price, props.currency, image, props.submenu);
       break;
     }
     default: {
@@ -143,6 +148,46 @@ export default function Cards(props) {
       break;
     }
   }
+
+  return content;
+}
+
+export function OverflowMenu(props) {
+  const classNames = {
+    wrapper: 'card-menu-wrapper',
+    cardMenu: 'card-menu',
+  };
+
+  switch (props.submenu) {
+    case 'small':
+      classNames.cardMenu += ' small';
+      break;
+    case 'full':
+      classNames.wrapper += ' full';
+      break;
+    default:
+      break;
+  }
+
+  const base = (
+    <div className={classNames.cardMenu}>
+      <div>Action 1</div>
+      <div>Action 2</div>
+      <div>Action 3</div>
+      <div>Action 4</div>
+    </div>
+  );
+
+  function addMenuWrapper(content, WrapperClassName) {
+    return (
+      <div className={WrapperClassName}>
+        {content}
+        <div className="separeted-link"><a>Separated link</a></div>
+      </div>
+    );
+  }
+
+  const content = props.submenu === 'small' ? base : addMenuWrapper(base, classNames.wrapper);
 
   return content;
 }
