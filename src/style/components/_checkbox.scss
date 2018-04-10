@@ -102,11 +102,6 @@
       cursor: initial;
     }
   }
-  &.rounded {
-    .checkbox-label:before{
-      border-radius: 100%;
-    }
-  }
   .checkbox-label:before{
     @extend %radio-checkbox-base;
     position: absolute;

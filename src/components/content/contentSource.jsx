@@ -102,7 +102,7 @@ export function ComponentSelector(data, tabTarget, lang, key) {
 
     case 'Badges':
       return (
-        <Badges text={data.text} type={data.type} icon={data.icon} iconType={data.iconType} key={key} />
+        <Badges text={data.text} type={data.type} icon={data.icon} iconType={data.iconType} linkLabel={data.linkLabel} key={key} />
       );
 
     case 'Alerts':
