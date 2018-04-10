@@ -238,3 +238,25 @@
     border-color: transparent;
   }
 };
+
+@mixin chevron-horizontal-style($direction, $right, $outlineRight) {
+  @if $direction == 'right' {
+    &::before {
+      right: $right !important;
+    }
+    &.btn-outline {
+      &::before {
+        right: $outlineRight !important;
+      }
+    }
+  } @else if $direction == 'left' {
+    &::before {
+      left: $right !important;
+    }
+    &.btn-outline {
+      &::before {
+        left: $outlineRight !important;
+      }
+    }
+  }
+};
