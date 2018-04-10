@@ -42,8 +42,8 @@ module.exports = {
   cache: true,
 
   output: {
-    path: path.resolve(__dirname, 'build/rex/css-framework/'),
-    publicPath: '/rex/css-framework/',
+    path: path.resolve(__dirname, 'build/css-framework/'),
+    publicPath: '/css-framework/',
     filename: 'rex-css-framework.js',
   },
 
