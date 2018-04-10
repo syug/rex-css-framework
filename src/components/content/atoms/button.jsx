@@ -71,62 +71,96 @@ export function Button(props) {
     }
 
     function checkButtonOption(option, size, type, innerIcon, icon, disabled) {
+      // HACK
       switch (option) {
 
-      case 'pill':
-        btnClasses += ' btn-pill';
-        break;
+        case 'pill':
+          btnClasses += ' btn-pill';
+          break;
 
-      case 'text':
-        btnClasses += ' btn-text';
-        break;
+        case 'text':
+          btnClasses += ' btn-text';
+          break;
 
-      // circle buttons
-      case 'circle':
-        btnClasses = 'btn btn-circle';
-        // switch circle size
-        switch (size) {
-        case 'xl':
-          btnClasses += ' btn-circle-xl';
+        // circle buttons
+        case 'circle':
+          btnClasses = 'btn btn-circle';
+          // switch circle size
+          switch (size) {
+            case 'xl':
+              btnClasses += ' btn-circle-xl';
+              break;
+            case 'lg':
+              btnClasses += ' btn-circle-lg';
+              break;
+            case 'sm':
+              btnClasses += ' btn-circle-sm';
+              break;
+          }
+          //switch circle type
+          switch (type) {
+            case 'outline':
+              btnClasses += ' btn-outline';
+              break;
+            case 'link':
+              btnClasses = '';
+              break;
+            default:
+              btnClasses += ' btn-default';
+              break;
+          }
+          //switch iner icon
+          switch (innerIcon) {
+            case 'chevron-left':
+              btnClasses += ' rex-icon chevron-left';
+              break;
+            case 'chevron-right':
+              btnClasses += ' rex-icon chevron-right';
+              break;
+            case 'plus':
+              btnClasses += ' rex-icon plus';
+              break;
+            case 'minus':
+              btnClasses += ' rex-icon minus';
+              break;
+            case 'chevron-top':
+              btnClasses += ' rex-icon chevron-top';
+              break;
+          }
           break;
-        case 'lg':
-          btnClasses += ' btn-circle-lg';
-          break;
-        case 'sm':
-          btnClasses += ' btn-circle-sm';
-          break;
-        }
-        //switch circle type
-        switch (type) {
-        case 'outline':
-          btnClasses += ' btn-outline';
-          break;
-        case 'link':
-          btnClasses = '';
-          break;
-        default:
-          btnClasses += ' btn-default';
-          break;
-        }
-        //switch iner icon
-        switch (innerIcon) {
-        case 'chevron-left':
-          btnClasses += ' rex-icon chevron-left';
-          break;
-        case 'chevron-right':
-          btnClasses += ' rex-icon chevron-right';
-          break;
-        case 'plus':
-          btnClasses += ' rex-icon plus';
-          break;
-        case 'minus':
-          btnClasses += ' rex-icon minus';
-          break;
-        case 'chevron-top':
-          btnClasses += ' rex-icon chevron-top';
-          break;
-        }
-        break;
+
+        case 'square':
+          btnClasses = 'btn btn-square';
+          //switch circle type
+          switch (type) {
+            case 'outline':
+              btnClasses += ' btn-outline';
+              break;
+            case 'link':
+              btnClasses = '';
+              break;
+            default:
+              btnClasses += ' btn-default';
+              break;
+          }
+          //switch iner icon
+          switch (innerIcon) {
+            case 'chevron-left':
+              btnClasses += ' rex-icon chevron-left';
+              break;
+            case 'chevron-right':
+              btnClasses += ' rex-icon chevron-right';
+              break;
+            case 'plus':
+              btnClasses += ' rex-icon plus';
+              break;
+            case 'minus':
+              btnClasses += ' rex-icon minus';
+              break;
+            case 'chevron-top':
+              btnClasses += ' rex-icon chevron-top';
+              break;
+          }
       }
       if (icon) { btnClasses += ' icon'; }
       if (icon === 'loading') { btnClasses += ' loading'; }

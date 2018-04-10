@@ -272,6 +272,46 @@
         "component": "Heading",
         "type": "h4",
         "text": {
+          "en": "Chevron left",
+          "jp": "Chevron left"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "innerIcon": "chevron-left",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-left",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
           "en": "Circular chevron left",
           "jp": "アウトライン"
         }
@@ -296,6 +336,46 @@
             "size": "",
             "type": "outline",
             "innerIcon": "chevron-left",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Chevron right",
+          "jp": "Chevron right"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "innerIcon": "chevron-right",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-right",
             "text": {
               "en": "",
               "jp": ""
@@ -352,6 +432,46 @@
         "component": "Heading",
         "type": "h4",
         "text": {
+          "en": "Plus",
+          "jp": "plus"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "innerIcon": "plus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "plus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
           "en": "Circular plus",
           "jp": "アウトライン"
         }
@@ -376,6 +496,46 @@
             "size": "",
             "type": "outline",
             "innerIcon": "plus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Minus",
+          "jp": "Minus"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "innerIcon": "minus",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "minus",
             "text": {
               "en": "",
               "jp": ""
@@ -433,6 +593,46 @@
         "type": "h4",
         "text": {
           "en": "Back to top",
+          "jp": "トップへ"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "4-8",
+        "data": [
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "innerIcon": "chevron-top",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          },
+          {
+            "component": "Button",
+            "option": "square",
+            "size": "",
+            "type": "outline",
+            "innerIcon": "chevron-top",
+            "text": {
+              "en": "",
+              "jp": ""
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Circular back to top",
           "jp": "トップへ"
         }
       },
