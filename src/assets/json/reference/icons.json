@@ -105,7 +105,9 @@
           "barcode-l",
           "barcode-f",
           "qrcode-l",
-          "qrcode-f"
+          "qrcode-f",
+          "chat-l",
+          "chat-f"
         ]
       }
     ]
