@@ -9,7 +9,7 @@ const plugins = [
   }),
   new webpack.HotModuleReplacementPlugin(),
   new HtmlWebpackPlugin({
-    title: 'Rex Platform',
+    title: 'Rex CSS Framework',
     template: './src/index.html',
   }),
 ];
@@ -42,8 +42,8 @@ module.exports = {
   cache: true,
 
   output: {
-    path: path.resolve(__dirname, 'build'),
-    publicPath: '/rex/css-framework/',
+    path: path.resolve(__dirname, 'build/css-framework/'),
+    publicPath: '/css-framework/',
     filename: 'rex-css-framework.js',
   },
 

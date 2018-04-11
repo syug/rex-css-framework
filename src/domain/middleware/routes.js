@@ -1,4 +1,4 @@
-export const root = '/rex/css-framework/';
+export const root = '/css-framework/';
 
 export const SITE_INDEX = `${root}`;
 export const SITE_ROOT = `${root}`;
