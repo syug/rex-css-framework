@@ -55,6 +55,10 @@
         left: 0;
         color: $brand-primary;
       }
+      &:focus,
+      &:active {
+        border-bottom: none;
+      }
     }
     .next {
       &::after {
@@ -64,6 +68,10 @@
         top: 2px;
         right: 0;
         color: $brand-primary;
+      }
+      &:focus,
+      &:active {
+        border-bottom: none;
       }
     }
     .tabItem-group {
