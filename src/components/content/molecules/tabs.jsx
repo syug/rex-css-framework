@@ -36,13 +36,14 @@ export function Icons(type, subType) {
 export default function Tabs(props) {
   const items = ['itemA', 'itemB', 'itemC'];
   const type = props.type ? ` ${props.type}` : '';
+  const subType = props.subType ? props.subType : '';
   let content;
   const types = type.split(' ');
 
   if (types.indexOf('icons') >= 0) {
-    content = Icons(type, props.subType);
+    content = Icons(type, subType);
   } else {
-    content = Base(type, items, props.subType);
+    content = Base(type, items, subType);
   }
 
   return content;
