@@ -15,7 +15,7 @@
     "data": [
       {
         "component": "Alerts",
-        "type": "danger",
+        "type": "alert-icon danger",
         "htmlText": {
           "en": "<b>This is an experimental version.</b><br/>Please make sure to check before deploying it on production.",
           "jp": "<b>これはexperimentalバージョンです。</b><br/>プロダクション環境へデプロイする際は十分ご注意ください。"
