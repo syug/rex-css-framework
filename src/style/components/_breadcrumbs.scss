@@ -3,7 +3,7 @@
   color: $gray-medium;
   & > li {
     display: inline-block;
-    &::after {
+    &:not(:first-child)::before {
       font-family: rex-icon;  // TODO: make it variable or mixin
       content: $_32-chevron-right;
       font-size: 14px;
@@ -14,13 +14,8 @@
       color: $gray-medium;
       text-decoration: none;
     }
-    &.active {
-      > a {
-        color: $brand-primary;
-      }
-      &::after {
-        color: $brand-primary;
-      }
+    &.active > a {
+      color: $brand-primary;
     }
   }
 }
