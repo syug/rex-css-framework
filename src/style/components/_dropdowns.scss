@@ -84,12 +84,12 @@
       color: $brand-primary;
       &:hover, &:focus {
         background-color: $brand-primary-lighten;
-        border-right-color: $brand-primary;
+        border-color: $brand-primary-lighten;
         color: $white;
       }
       &:active {
         background-color: $brand-primary-darken;
-        border-right-color: $brand-primary;
+        border-color: $brand-primary-darken;
         color: $white;
       }
     }
@@ -108,6 +108,7 @@
     border-radius: 3px 0px 0px 3px;
     padding-right: 16px;
     padding-left: 16px;
+    border-right: none;
   }
   .btn-split {
     display: inline-block;
