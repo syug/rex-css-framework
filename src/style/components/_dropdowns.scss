@@ -82,8 +82,15 @@
       border-color: $brand-primary;
       background-color: $white;
       color: $brand-primary;
-      &:hover, &:focus, &:active {
-        background-color: $white;
+      &:hover, &:focus {
+        background-color: $brand-primary-lighten;
+        border-right-color: $brand-primary;
+        color: $white;
+      }
+      &:active {
+        background-color: $brand-primary-darken;
+        border-right-color: $brand-primary;
+        color: $white;
       }
     }
     .btn-split {
@@ -101,9 +108,6 @@
     border-radius: 3px 0px 0px 3px;
     padding-right: 16px;
     padding-left: 16px;
-    &:hover, &:active, &:focus {
-      background-color: $brand-primary;
-    }
   }
   .btn-split {
     display: inline-block;
