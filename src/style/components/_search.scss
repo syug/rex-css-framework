@@ -11,6 +11,7 @@
     .search-input-wrapper {
       width: 100%;
       display: inline-block;
+      position: relative;
       input {
         background-color: $white;
         border-top: solid 1px $white;
@@ -39,6 +40,19 @@
       }
       &::-ms-clear {
         display: none;
+      }
+      .close {
+        display: none;
+        &:after {
+          font-family: rex-icon;
+          content: $_32-x;
+          font-size: 16px;
+          position: absolute;
+          right: 60px;
+          top: 6px;
+          color: $black;
+          cursor: pointer;
+        }
       }
     }
     .search-btn {
@@ -100,6 +114,9 @@
       input {
         background-color: transparent;
         border-color: $gray-light;
+        &:focus + .close {
+          display: inline;
+        }
       }
     }
     .search-btn {
