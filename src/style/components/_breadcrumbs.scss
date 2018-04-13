@@ -13,9 +13,15 @@
     & > a {
       color: $gray-medium;
       text-decoration: none;
+      &:hover, &:focus {
+        color: $brand-primary-lighten;
+      }
+      &:active {
+        color: $brand-primary-darken;
+      }
     }
     &.active > a {
-      color: $brand-primary;
+      color: $brand-primary-darken;
     }
   }
 }

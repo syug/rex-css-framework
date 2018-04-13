@@ -36,6 +36,8 @@
           "rakuten-close-account-f",
           "login-l",
           "logout-l",
+          "my-page-l",
+          "my-page-f",
           "notice-user-l",
           "notice-user-f",
           "notice-generic-l",
@@ -105,7 +107,9 @@
           "barcode-l",
           "barcode-f",
           "qrcode-l",
-          "qrcode-f"
+          "qrcode-f",
+          "chat-l",
+          "chat-f"
         ]
       }
     ]

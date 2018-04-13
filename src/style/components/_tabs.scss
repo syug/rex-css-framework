@@ -26,9 +26,12 @@
       margin-right: 32px;
     }
   }
+  :focus,
+  :active,
   .active {
     color: $brand-primary;
     border-bottom: 1px solid $brand-primary;
+    outline: none;
   }
   .selected, .item:hover {
     background-color: $gray-lightest;
@@ -52,6 +55,10 @@
         left: 0;
         color: $brand-primary;
       }
+      &:focus,
+      &:active {
+        border-bottom: none;
+      }
     }
     .next {
       &::after {
@@ -61,6 +68,10 @@
         top: 2px;
         right: 0;
         color: $brand-primary;
+      }
+      &:focus,
+      &:active {
+        border-bottom: none;
       }
     }
     .tabItem-group {
@@ -92,6 +103,8 @@
     .item {
       border-top: 1px solid $gray-light;
       border-bottom: none;
+      &:focus,
+      &:active,
       &.active {
         border-top: 1px solid $brand-primary;
       }
@@ -106,6 +119,8 @@
     }
     .item {
       border-bottom: none;
+      &:focus,
+      &:active,
       &.active {
         border-bottom: 1px solid $brand-primary;
       }
@@ -126,9 +141,15 @@
         color: $black;
         padding-right: 32px;
         padding-left: 32px;
+        margin-right: 0;
+        &:focus,
+        &:active,
         &.active {
           border-bottom: none;
           color: $brand-primary;
+          .rex-icon {
+            border-bottom: none;
+          }
         }
       }
     }
