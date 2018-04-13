@@ -2,19 +2,22 @@ import * as React from 'react';
 import { Icon } from '../../atoms/icon';
 
 export default function SearchBar(props) {
-  const type = props.type;
-  const displayType = type ? ` ${type}` : '';
+  const type = props.type || '';
+  let scope;
+  const scopeText = props.scopeText ? props.scopeText : 'All';
+  if (type.split(' ').includes('scope')) {
+    scope = (
+      <div className="search-selection">
+        {scopeText}
+      </div>
+    );
+  }
 
   return (
-    <div className={`rex-search${displayType}`}>
+    <div className={`rex-search ${type}`}>
       <div className="input-group">
-
         <div className="search-input-wrapper">
-          { type === 'scope' || type === 'scope rounded' ? (
-            <div className="search-selection">
-              All
-            </div>
-          ) : null }
+          {scope}
           <input type="text" placeholder="Search" />
         </div>
         <div className="search-btn">

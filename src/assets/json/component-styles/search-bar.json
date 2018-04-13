@@ -102,6 +102,15 @@
             "type": "rounded outline"
           }
         ]
+      },
+      {
+        "component": "WorkingExample",
+        "data": [
+          {
+            "component": "SearchBar",
+            "type": "scope outline"
+          }
+        ]
       }
     ]
   },
