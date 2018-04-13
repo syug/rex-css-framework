@@ -135,8 +135,8 @@
         border-color: $brand-primary-lighten;
       }
       &:active {
-        background-color: #960000;
-        border-color: #960000;
+        background-color: $brand-primary-darken;
+        border-color: $brand-primary-darken;
       }
     }
   }
