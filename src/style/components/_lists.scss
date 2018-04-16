@@ -86,17 +86,21 @@
           font-size: 14px;
           margin: 8px 0 0 8px;
           color: $gray-medium;
-          > .link {
-            display: block;
-            color: $gray-medium;
-            &:hover {
+          &:hover {
+            .link {
               color: lighten($brand-primary, 16%);
             }
-            &:active,
-            &.active {
+          }
+          &:active,
+          &.active {
+            .link {
               color: darken($brand-primary, 8%);
               text-decoration: underline;
             }
+          }
+          > .link {
+            display: block;
+            color: $gray-medium;
           }
         }
       }
