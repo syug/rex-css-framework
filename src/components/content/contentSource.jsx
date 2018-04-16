@@ -112,7 +112,7 @@ export function ComponentSelector(data, tabTarget, lang, key) {
 
     case 'Cards':
       return (
-        <Cards type={data.type} header={data.header} price={data.price} currency={data.currency} description={data.description} size={data.size} image={data.image} submenu={data.submenu} />
+        <Cards type={data.type} header={data.header} price={data.price} currency={data.currency} description={data.description} size={data.size} image={data.image} submenu={data.submenu} border={data.border} />
       );
 
     case 'Pagination':

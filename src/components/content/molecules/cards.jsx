@@ -42,13 +42,17 @@ export function cardsWithText(type, header, description) {
   );
 }
 
-export function panel(header, price, currency, image, submenu) {
+export function panel(header, price, currency, image, submenu, border) {
   let overflowMenu;
+  let panelClassName = 'card panel';
   if (submenu) {
     overflowMenu = <OverflowMenu submenu={submenu} />;
   }
+  if (border) {
+    panelClassName += ' border';
+  }
   return (
-    <div className="card panel">
+    <div className={panelClassName}>
       <CardMedia>
         <img src={image} alt="" />
       </CardMedia>
@@ -140,7 +144,7 @@ export default function Cards(props) {
       break;
     }
     case 'panel': {
-      content = panel(props.header, props.price, props.currency, image, props.submenu);
+      content = panel(props.header, props.price, props.currency, image, props.submenu, props.border);
       break;
     }
     default: {

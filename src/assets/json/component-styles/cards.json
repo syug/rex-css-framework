@@ -263,7 +263,8 @@
             "price": "10,926",
             "currency": "円",
             "image": "img/onsen.png",
-            "submenu": "normal"
+            "submenu": "normal",
+            "border": true
           }
         ]
       },
