@@ -1,29 +1,30 @@
 import * as React from 'react';
 import Label from '../atoms/labels';
 import Rating from '../atoms/rating';
+import { Routes } from '../../../domain/middleware/routes';
 
-export function landscape(size, header, description) {
-  const type = size ? ` ${size}` : '';
+export function landscape(size, header, description, image) {
+  const type = size || '';
   return (
-    <div className={`card${type}`}>
+    <div className={`card ${type}`}>
       <CardMedia>
-        <img src="/img/bamboo.jpeg" alt="" />
+        <img src={image} alt="" />
       </CardMedia>
       <CardContent header={header} description={description}>
         <CardAction>
           <a className="button">Read more</a>
-          <a className="button"><span className="circle">•••</span></a>
+          <a className="button"><span className="more" /></a>
         </CardAction>
       </CardContent>
     </div>
   );
 }
 
-export function fullImage(header) {
+export function fullImage(header, image) {
   return (
     <div className="card image">
       <CardMedia overlayTitle={header} overlaySubtitle="Located in Kyoto, Japan">
-        <img src="/img/bamboo.jpeg" alt="" />
+        <img src={image} alt="" />
       </CardMedia>
     </div>
   );
@@ -31,7 +32,7 @@ export function fullImage(header) {
 
 export function cardsWithText(type, header, description) {
   return (
-    <div className={`card${type}`}>
+    <div className={`card ${type}`}>
       <CardContent header={header} description={description}>
         <CardAction>
           <a className="button">Learn more</a>
@@ -41,11 +42,19 @@ export function cardsWithText(type, header, description) {
   );
 }
 
-export function panel(header, price, currency) {
+export function panel(header, price, currency, image, submenu, border) {
+  let overflowMenu;
+  let panelClassName = 'card panel';
+  if (submenu) {
+    overflowMenu = <OverflowMenu submenu={submenu} />;
+  }
+  if (border) {
+    panelClassName += ' border';
+  }
   return (
-    <div className={'card panel'}>
+    <div className={panelClassName}>
       <CardMedia>
-        <img src="/img/onsen.png" alt="" />
+        <img src={image} alt="" />
       </CardMedia>
       <CardContent header={header} >
         <div className="price">{price}<span className="currency">{currency}</span></div>
@@ -66,35 +75,40 @@ export function panel(header, price, currency) {
         <CardAction>
           <a className="button">Availability</a>
           <a className="button">Locatoin</a>
-          <a className="button">•••</a>
+          <a className="button"><span className="more" /></a>
         </CardAction>
       </CardContent>
+      {overflowMenu}
     </div>
   );
 }
 
-export function CardAction(props) {
+export function contentWrapper(content, className) {
   return (
-    <div className="extra contents">
-      {props.children}
+    <div className={className}>
+      {content}
     </div>
   );
 }
 
 export function CardContent(props) {
+  const content = {
+    header: props.header ? contentWrapper(props.header, 'header') : null,
+    description: props.description ? contentWrapper(props.description, 'description') : null,
+    children: props.children ? props.children : null,
+  };
+
   return (
     <div className="content">
-      {props.header ? (
-        <div className="header">
-          {props.header}
-        </div>) : null}
-      {props.description ? (
-        <div className="description">
-          {props.description}
-        </div>) : null}
-      {props.children ? props.children : null}
+      {content.header}
+      {content.description}
+      {content.children}
     </div>
   );
+}
+
+export function CardAction(props) {
+  return contentWrapper(props.children, 'extra contents');
 }
 
 export function CardMedia(props) {
@@ -112,26 +126,72 @@ export function CardMedia(props) {
 }
 
 export function CardLabel(props) {
-  return (
-    <div className={`${props.type ? props.type : null}`} >
-      {props.children}
-    </div>
-  );
+  const type = props.type || '';
+  return contentWrapper(props.children, type);
 }
 
 export default function Cards(props) {
-  const type = props.type ? ` ${props.type}` : '';
-
+  const type = props.type || '';
+  const image = props.image ? `${Routes.SITE_ROOT}${props.image}` : '';
   let content;
-  if (props.type === 'size') {
-    content = landscape(props.size, props.header, props.description);
-  } else if (props.type === 'image') {
-    content = fullImage(props.header);
-  } else if (props.type === 'panel') {
-    content = panel(props.header, props.price, props.currency);
-  } else {
-    content = cardsWithText(type, props.header, props.description);
+  switch (type) {
+    case 'size': {
+      content = landscape(props.size, props.header, props.description, image);
+      break;
+    }
+    case 'image': {
+      content = fullImage(props.header, image);
+      break;
+    }
+    case 'panel': {
+      content = panel(props.header, props.price, props.currency, image, props.submenu, props.border);
+      break;
+    }
+    default: {
+      content = cardsWithText(type, props.header, props.description);
+      break;
+    }
   }
+
+  return content;
+}
+
+export function OverflowMenu(props) {
+  const classNames = {
+    wrapper: 'card-menu-wrapper',
+    cardMenu: 'card-menu',
+  };
+
+  switch (props.submenu) {
+    case 'small':
+      classNames.cardMenu += ' small';
+      break;
+    case 'full':
+      classNames.wrapper += ' full';
+      break;
+    default:
+      break;
+  }
+
+  const base = (
+    <div className={classNames.cardMenu}>
+      <div>Action 1</div>
+      <div>Action 2</div>
+      <div>Action 3</div>
+      <div>Action 4</div>
+    </div>
+  );
+
+  function addMenuWrapper(content, WrapperClassName) {
+    return (
+      <div className={WrapperClassName}>
+        {content}
+        <div className="separeted-link"><a>Separated link</a></div>
+      </div>
+    );
+  }
+
+  const content = props.submenu === 'small' ? base : addMenuWrapper(base, classNames.wrapper);
 
   return content;
 }
