@@ -1,26 +1,23 @@
 import * as React from 'react';
+import cx from 'classnames';
 import { Icon } from '../atoms/icon';
 
 export default function Badges(props) {
-  let badgeClasses = 'badge';
-  const { text, icon, iconType } = props;
-  switch (props.type) {
-    case 'round':
-      badgeClasses += ' round';
-      break;
-    case 'pill':
-      badgeClasses += ' pill';
-      break;
-    case 'empty':
-      badgeClasses += ' empty';
-      break;
-    default:
+  const { text, type, icon, iconType, linkLabel } = props;
+  const badgeClass = cx('badge', type);
+  const badgeWrapperClass = cx('badge', {icon: icon}, {link: linkLabel});
+  let content;
+
+  if (icon) {
+    content = <Icon type={iconType} name={icon} />;
+  } else if (linkLabel) {
+    content = <a>{linkLabel}</a>;
   }
 
   return (
-    <span className="badge">
-      {icon ? (<Icon type={iconType} name={icon} />) : null}
-      <span className={badgeClasses}>{text}</span>
+    <span className={badgeWrapperClass}>
+      {content}
+      <span className={badgeClass}>{text}</span>
     </span>
   );
 }

@@ -17,10 +17,10 @@
     "data": [
       {
         "component": "Heading",
-        "type": "h4",
+        "type": "h3",
         "text": {
-          "en": "Success",
-          "jp": "Success"
+          "en": "Alerts",
+          "jp": "アラート"
         }
       },
       {
@@ -30,23 +30,9 @@
           {
             "component": "Alerts",
             "type": "success",
-            "text": ["New"],
-            "icon": "check"
+            "text": ["Success"]
           }
         ]
-      }
-    ]
-  },
-  {
-    "component": "Section",
-    "data": [
-      {
-        "component": "Heading",
-        "type": "h4",
-        "text": {
-          "en": "Info",
-          "jp": "Info"
-        }
       },
       {
         "component": "WorkingExample",
@@ -55,24 +41,9 @@
           {
             "component": "Alerts",
             "type": "info",
-            "text": ["New"],
-            "icon": "sign-info",
-            "iconType": "line"
+            "text": ["Info"]
           }
         ]
-      }
-    ]
-  },
-  {
-    "component": "Section",
-    "data": [
-      {
-        "component": "Heading",
-        "type": "h4",
-        "text": {
-          "en": "Warning",
-          "jp": "Warning"
-        }
       },
       {
         "component": "WorkingExample",
@@ -81,9 +52,18 @@
           {
             "component": "Alerts",
             "type": "warning",
-            "text": ["New"],
-            "icon": "sign-info",
-            "iconType": "line"
+            "text": ["Warning"]
+          }
+        ]
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Alerts",
+            "type": "danger",
+            "text": ["Danger"]
           }
         ]
       }
@@ -94,10 +74,10 @@
     "data": [
       {
         "component": "Heading",
-        "type": "h4",
+        "type": "h3",
         "text": {
-          "en": "Danger",
-          "jp": "Danger"
+          "en": "Alerts with Icons",
+          "jp": "アイコン付きアラート"
         }
       },
       {
@@ -106,8 +86,46 @@
         "data": [
           {
             "component": "Alerts",
-            "type": "danger",
-            "text": ["New"],
+            "type": "alert-icon success",
+            "text": ["Success"],
+            "icon": "check"
+          }
+        ]
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Alerts",
+            "type": "alert-icon info",
+            "text": ["Info"],
+            "icon": "sign-info",
+            "iconType": "line"
+          }
+        ]
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Alerts",
+            "type": "alert-icon warning",
+            "text": ["Warning"],
+            "icon": "sign-info",
+            "iconType": "line"
+          }
+        ]
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Alerts",
+            "type": "alert-icon danger",
+            "text": ["Danger"],
             "icon": "sign-warning",
             "iconType": "line"
           }
@@ -120,7 +138,7 @@
     "data": [
       {
         "component": "Heading",
-        "type": "h4",
+        "type": "h3",
         "text": {
           "en": "List",
           "jp": "List"

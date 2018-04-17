@@ -1,4 +1,17 @@
 .tab {
+  position: relative;
+  display: inline-block;
+  // underline
+  &:before {
+    position: absolute;
+    content: "";
+    width: 99%;
+    height: 1px;
+    left: 0;
+    bottom: -24%;
+    background-color: $gray-light;
+    z-index: 0;
+  }
   a.item {
     text-decoration: none;
   }
@@ -7,10 +20,18 @@
     color: $gray-medium;
     padding: 7.5px 17.5px;
     border-bottom: 1px solid $gray-light;
+    position: relative;
+    z-index: 1;
+    &:not(:last-of-type) {
+      margin-right: 32px;
+    }
   }
+  :focus,
+  :active,
   .active {
     color: $brand-primary;
     border-bottom: 1px solid $brand-primary;
+    outline: none;
   }
   .selected, .item:hover {
     background-color: $gray-lightest;
@@ -21,6 +42,10 @@
     padding-left: 32px;
     display: inline-block;
     position: relative;
+    &:before {
+      width: calc(99% - 64px);
+      left: 32px;
+    }
     .previous {
       &::before {
         content: $_32-chevron-left;
@@ -29,6 +54,10 @@
         top: 2px;
         left: 0;
         color: $brand-primary;
+      }
+      &:focus,
+      &:active {
+        border-bottom: none;
       }
     }
     .next {
@@ -39,6 +68,10 @@
         top: 2px;
         right: 0;
         color: $brand-primary;
+      }
+      &:focus,
+      &:active {
+        border-bottom: none;
       }
     }
     .tabItem-group {
@@ -64,9 +97,14 @@
     }
   }
   &.border-top {
+    &:before {
+      top: -20%;
+    }
     .item {
       border-top: 1px solid $gray-light;
       border-bottom: none;
+      &:focus,
+      &:active,
       &.active {
         border-top: 1px solid $brand-primary;
       }
@@ -76,8 +114,13 @@
     }
   }
   &.mobile {
+    &:before {
+      display: none;
+    }
     .item {
       border-bottom: none;
+      &:focus,
+      &:active,
       &.active {
         border-bottom: 1px solid $brand-primary;
       }
@@ -98,9 +141,15 @@
         color: $black;
         padding-right: 32px;
         padding-left: 32px;
+        margin-right: 0;
+        &:focus,
+        &:active,
         &.active {
           border-bottom: none;
           color: $brand-primary;
+          .rex-icon {
+            border-bottom: none;
+          }
         }
       }
     }

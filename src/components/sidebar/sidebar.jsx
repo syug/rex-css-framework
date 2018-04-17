@@ -21,7 +21,7 @@ export function Sidebar(props) {
     <section id="sidebar" onClick={clearSearchAction}>
       <nav style={style}>
         <Logo colorSelect={colorSelect} />
-        <div className="version">v1.2.1 (experimental)</div>
+        <div className="version">v0.1.0</div>
         <Menu menu={menu} localization={localization} />
       </nav>
     </section>

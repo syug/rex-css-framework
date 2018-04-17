@@ -6,9 +6,9 @@ webpackConfig.devServer = {
   quiet: false,
   hot: true,
   open: true,
-  openPage: 'rex/css-framework/',
+  openPage: 'css-framework/',
   historyApiFallback: {
-    index: '/rex/css-framework/',
+    index: '/css-framework/',
   },
 };
 

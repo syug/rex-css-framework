@@ -10,7 +10,7 @@ const autoprefixer = require('autoprefixer');
 
 const plugins = [
   new UglifyJSPlugin(),
-  new CleanWebpackPlugin(['dist']),
+  new CleanWebpackPlugin(['build']),
   new webpack.LoaderOptionsPlugin({
     options: {
       postcss: [
