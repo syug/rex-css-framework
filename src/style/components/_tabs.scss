@@ -5,7 +5,7 @@
   &:before {
     position: absolute;
     content: "";
-    width: 99%;
+    width: 99.6%;
     height: 1px;
     left: 0;
     bottom: -24%;
@@ -19,7 +19,7 @@
     font-size: 16px;
     color: $gray-medium;
     padding: 7.5px 17.5px;
-    border-bottom: 1px solid $gray-light;
+    border-bottom: 1px solid transparent;
     position: relative;
     z-index: 1;
     &:not(:last-of-type) {
@@ -101,7 +101,7 @@
       top: -20%;
     }
     .item {
-      border-top: 1px solid $gray-light;
+      border-top: 1px solid transparents;
       border-bottom: none;
       &:focus,
       &:active,
