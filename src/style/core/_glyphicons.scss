@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("#{$icon-font-path}/#{$icon-font-name}.eot?17b1916295d440dcb57570861ed9f719?#iefix") format("embedded-opentype"),
-url("#{$icon-font-path}/#{$icon-font-name}.woff2?17b1916295d440dcb57570861ed9f719") format("woff2"),
-url("#{$icon-font-path}/#{$icon-font-name}.woff?17b1916295d440dcb57570861ed9f719") format("woff");
+  src: url("#{$icon-font-path}#{$icon-font-name}.eot?17b1916295d440dcb57570861ed9f719?#iefix") format("embedded-opentype"),
+url("#{$icon-font-path}#{$icon-font-name}.woff2?17b1916295d440dcb57570861ed9f719") format("woff2"),
+url("#{$icon-font-path}#{$icon-font-name}.woff?17b1916295d440dcb57570861ed9f719") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
