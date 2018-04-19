@@ -19,7 +19,7 @@
         border-bottom: solid 1px $white;
         border-right: solid 1px $white;
         border-radius: 4px;
-        transition: 0.2s cubic-bezier(0, 0, 0.58, 1);
+        @include transition(all .2s cubic-bezier(0, 0, 0.58, 1));
         padding: 0 48px 0 16px;
         width: 100%;
         line-height: 3em;
@@ -75,6 +75,7 @@
       right: 0;
       top: 0;
       cursor: pointer;
+      @include transition(all .2s cubic-bezier(0, 0, 0.58, 1));
       .search {
         top: 3px;
       }
@@ -160,6 +161,7 @@
         border-bottom: 1px solid $gray-light;
         border-right: 1px solid transparent;
         color: $brand-primary;
+        @include transition(all .2s cubic-bezier(0, 0, 0.58, 1));
         &::after {
           content: "";
           position: absolute;
