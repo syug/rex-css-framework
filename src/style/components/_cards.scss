@@ -6,6 +6,7 @@
 }
 
 .card {
+  @include transition(all .2s cubic-bezier(.25,0,.45,1));
   &.landscape {
     @include cardBaseStyle(296px, 377px);
     > img {
