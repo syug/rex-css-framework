@@ -2,7 +2,6 @@
   &.image {
     position: relative;
     max-width: 1256px;
-    // overflow: hidden;
     .title {
       font-size: 24px;
       font-weight: bold;
@@ -29,12 +28,12 @@
       display: flex;
       justify-content: flex-start;
       margin-top: 24px;
-    }
-    .carousel-item {
-      margin-left: 4px;
-      margin-right: 4px;
-      .title {
-        color: $white;
+      .carousel-item {
+        margin-left: 4px;
+        margin-right: 4px;
+        .title {
+          color: $white;
+        }
       }
     }
     .btn.btn-circle {
@@ -74,7 +73,13 @@
       }
     }
   }
-  &.card, &.tab {
+  &.carousel-tab {
+    .tab {
+      display: block;
+      margin-top: 16px;
+    }
+  }
+  &.card, &.carousel-tab {
     position: relative;
     max-width: 1200px;
     // overflow: hidden;
@@ -147,113 +152,157 @@
   }
   &.marketing {
     position: relative;
-    // overflow: hidden;
-    // .title {
-    //   font-size: 24px;
-    //   font-weight: bold;
-    //   color: $black;
-    //   display: inline-block;
-    // }
-    // .buttons {
-    //   position: absolute;
-    //   right: 0;
-    //   top: 12px;
-    //   .button {
-    //     color: #00A0F0;
-    //     text-decoration: none;
-    //     &:not(:first-of-type)::before {
-    //       content: "";
-    //       margin-left: 6px;
-    //     }
-    //   }
-    // }
+    width: 100%;
+    max-width: 1208px;
+    margin-bottom: 88px;
+    overflow: hidden;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 56.3%;
+    }
+
     .introduction {
-      // background-color: burlywood;
       position: absolute;
-      top: 25%;
-      left: 15%;
+      top: 36%;
+      left: 10%;
       z-index: 3;
       color: $white;
+      display: inline-block;
       .text {
-        font-size: 0.8em;
+        font-size: 14px;
       }
       .title {
-        font-size: 52px;
-        line-height: 52px;
-        width: 546px;
+        line-height: 1;
+        font-size: 40px;
+
+        width: 55%;
       }
-      .buttons {
+      .button-area {
         margin-top: 8px;
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        .more {
+          color: inherit;
+          text-decoration: none;
+        }
+        .rex-icon {
+          color: inherit;
+          font-size: 12px;
+          top: 1px;
+          left: 4px;
+        }
       }
 
     }
-    .carousel-inner {
+    .carousel-item.active {
       overflow: hidden;
-      position: relative;
-      display: flex;
-      justify-content: flex-start;
-      margin-top: 24px;
-      // 追記
-      // position: relative;
-      // width: 100%;
-      // &::before {
-      //   display: block;
-      //   padding-top: 75%;
-      //   background-color: blue;
-      //   content: "";
-      // }
-    }
-    .carousel-item {
-      // margin-left: 4px;
-      // margin-right: 4px;
-
-      // 追記その2
-      // position: absolute;
-      // top: 0;
-      // right: 0;
-      // bottom: 0;
-      // left: 0;
-      // img {
-      //   width: auto;
-      //   height: auto;
-      //   max-width: 100%;
-      //   max-height: 100%;
-      // }
-      // 追記
-      position: relative;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
       width: 100%;
-      &::before {
-        content: "";
-        display: block;
-        padding-top: 100%;
-      }
       img {
-        position: absolute;
-        top: 0;
+        width: 100%;
+      }
+    }
+    .carousel-thumbnails {
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      height: 88px;
+      &.bottom {
         bottom: 0;
         left: 0;
-        right: 0;
+        .carousel-item {
+          border: 1px solid white;
+          .caption {
+            position: absolute;
+            top: 40px;
+            left: 16px;
+            color: inherit;
+            font-weight: lighter;
+          }
+          &.selected:before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: $green-medium-light;
+            top: 82px;
+            left: 0;
+          }
+        }
+      }
+      &.float {
+        bottom: 49px;
+        left: 104px;
+        width: calc(100% - 208px);
+        .carousel-item {
+          margin-right: 4px;
+          &.selected {
+            img {
+              border: 1px solid $green-medium-light;
+            }
+          }
+        }
+      }
+
+      .carousel-item {
+        position: relative;
+        color: $white;
+        cursor: pointer;
+        height: inherit;
+        img {
+          width: 171px;
+          height: 88px;
+        }
       }
     }
-    .btn.btn-circle {
-      background-color: $white;
-      color: $brand-primary;
+    .carousel-tab {
+      position: absolute;
+      left: 104px;
+      right: 104px;
+      bottom: 49px;
+      .tab {
+        display: block;
+        .item {
+          color: $white;
+          &.active,
+          &:active,
+          &:focus {
+            border-top-color: $green-medium-light;
+            color: $green-medium-light;
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
     }
     .previous, .next {
       position: absolute;
-      top: 245px;
+      top: 42%;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.48);
+        color: $white;
+        &:before {
+          top: -3px;
+        }
+      }
     }
     .previous {
-      left: -12px;
-      .btn.btn-circle {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
-      }
+      left: 4%;
     }
     .next {
-      right: -16px;
-      .btn.btn-circle {
-        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
-      }
+      right: 4%;
+      z-index: 3;
     }
   }
 }

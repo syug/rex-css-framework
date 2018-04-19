@@ -169,7 +169,7 @@ const COMPONENT_STYLES_CAROUSELS = {
     'jp': 'カルーセル'
   },
   'url': Routes.COMPONENT_STYLES_CAROUSELS,
-  'disabled': true
+  'disabled': false
 };
 const COMPONENT_STYLES_INDICATORS = {
   'text': {

@@ -25,7 +25,7 @@
       }
     ]
   },
-    {
+  {
     "component": "Section",
     "data": [
       {
@@ -54,7 +54,7 @@
       }
     ]
   },
-    {
+  {
     "component": "Section",
     "data": [
       {
@@ -77,13 +77,42 @@
         "component": "Heading",
         "type": "h4",
         "text": {
+          "en": "Tabs",
+          "jp": "Tabs"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "tab"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
           "en": "Marketing Carousel",
           "jp": "Marketing Carousel"
         }
       }
     ]
   },
-    {
+  {
     "component": "Section",
     "data": [
       {
@@ -94,6 +123,38 @@
             "component": "Carousels",
             "title": "carousel full image",
             "type": "marketing"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "marketing float"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "marketing tab"
           }
         ]
       }

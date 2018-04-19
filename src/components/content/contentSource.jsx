@@ -50,7 +50,6 @@ import Tabs from './molecules/tabs';
 import Cards from './molecules/cards';
 import Dropdowns from './molecules/dropdowns';
 import Badges from './molecules/badges';
-import Cards from './molecules/cards';
 
 // organisms
 import Carousels from './organisms/carousels';
@@ -70,11 +69,6 @@ export function ComponentSelector(data, tabTarget, lang, key) {
     case 'Carousels':
       return (
         <Carousels title={data.title} type={data.type} key={key} />
-      );
-
-    case 'Cards':
-      return (
-        <Cards type={data.type} header={data.header} price={data.price} currency={data.currency} description={data.description} size={data.size} />
       );
 
     case 'Slider':
