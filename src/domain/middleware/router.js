@@ -35,10 +35,16 @@ function LoadContent(props) {
 	}
 
 	if(isValidRoute) {
-		// Set current route to state
-		setCurrentRoute(
-			require('components/site')['Site']
-		);
+		if (newRoute.split('/').includes('usage')) {
+			setCurrentRoute(
+				require('components/example')['Example']
+			);
+		} else {
+			// Set current route to state
+			setCurrentRoute(
+				require('components/site')['Site']
+			);
+		}
 
 		//Set data (content and Sitemap)
 		setContentRouteAction(newRoute);

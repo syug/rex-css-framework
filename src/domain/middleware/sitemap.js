@@ -244,6 +244,17 @@ const COMPONENT_STYLES_MENU_LISTS = {
   'disabled': false
 };
 
+// Component styles
+const USAGE_CAROUSEL = {
+  'text': {
+    'en': 'Carousel',
+    'jp': 'カルーセル'
+  },
+  'url': Routes.USAGE_CAROUSEL,
+  'disabled': false
+};
+
+
 // Sitemap
 export const Sitemap = {
   'ROOT': {
@@ -295,6 +306,12 @@ export const Sitemap = {
         COMPONENT_STYLES_SLIDER,
         COMPONENT_STYLES_TABS,
         COMPONENT_STYLES_TRACK
+      ]
+    },
+    {
+      'text': 'Usage',
+      'list': [
+        USAGE_CAROUSEL
       ]
     }
   ]

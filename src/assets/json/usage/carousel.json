@@ -1,0 +1,125 @@
+[
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Carousel Examples",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Full Image",
+          "jp": "Full Image"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Card",
+          "jp": "Card"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "card"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Tabs",
+          "jp": "Tabs"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "tab"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing",
+          "jp": "カルーセル"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "marketing"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Float",
+          "jp": "カルーセル"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "marketing float"
+      }
+    ]
+  },
+
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing with Tab",
+          "jp": "カルーセル"
+        }
+      },
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "marketing tab"
+      }
+    ]
+  }
+
+]

@@ -5,6 +5,9 @@ import { ContentHeader } from './contentHeader';
 import { Section } from './section';
 import { Column } from './column';
 
+// usage
+import Row from './usage/row';
+
 // atoms
 import { Button } from './atoms/button';
 import { ContextualText, ContextualBackground } from './atoms/contextual-color';
@@ -194,6 +197,11 @@ export function ComponentSelector(data, tabTarget, lang, key) {
     case 'Section':
       return (
         <Section info={data} tabTarget={tabTarget} type={data.type} className={data.className} lang={lang} key={key} />
+      );
+
+    case 'Row':
+      return (
+        <Row data={data.data} tabTarget={tabTarget} type={data.type} className={data.className} lang={lang} key={key} />
       );
 
     case 'IconPicker':

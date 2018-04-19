@@ -7,7 +7,7 @@ export const OVERVIEW = `${root}overview/`;
 export const REFERENCE = `${root}reference/`;
 export const FOUNDATION = `${root}foundation/`;
 export const COMPONENT_STYLES = `${root}component-styles/`;
-
+export const USAGE = `${root}usage/`;
 
 export const Routes = {
   // Site
@@ -52,4 +52,7 @@ export const Routes = {
   'COMPONENT_STYLES_SLIDER': COMPONENT_STYLES + 'slider',
   'COMPONENT_STYLES_TRACK': COMPONENT_STYLES + 'track',
   'COMPONENT_STYLES_MENU_LISTS': COMPONENT_STYLES + 'menu-lists',
+
+  // Usage URLs
+  'USAGE_CAROUSEL': USAGE + 'carousel',
 };

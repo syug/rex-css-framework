@@ -36,11 +36,12 @@ export function App(props) {
     require('style/prototype/app-blue');
     require('style/prototype/app-dark-blue');
   }
+  const id = (content.route.url && content.route.url.split('/').includes('usage')) ? "app-examples" : "app";
 
   customClassName();
 
   return (
-    <div id="app" className="container-fluid">
+    <div id={id} className="container-fluid">
       {toggleStyleSheet}
       {DynamicModule(content)}
     </div>

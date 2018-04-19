@@ -21,5 +21,6 @@ export function setContentRoute(state, route) {
     'contentSource': contentSource
   };
 
+
   return setIn(state, ['content', 'route'], routeNew);
 }
