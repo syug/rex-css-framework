@@ -122,11 +122,12 @@
     position: relative;
     z-index: 1;
     &::before {
-      content: $_32-loading-l;
+      content: $_32-loading-lg-l;
       position: absolute;
       font-family: rex-icon;
-      top: 0.1em;
-      left: 42%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       font-size: 24px;
       z-index: 2;
     }
