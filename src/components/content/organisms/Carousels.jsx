@@ -134,6 +134,15 @@ export default function Carousels(props) {
             image="img/bamboo.jpeg"
           />
         </div>
+        <div className="carousel-item">
+          <Card
+            type="size"
+            size="landscape"
+            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+            header="Sagano Bamboo Forest"
+            image="img/bamboo.jpeg"
+          />
+        </div>
       </div>
       <span className="previous">
         <Button option="circle" size="" innerIcon="chevron-left" />
@@ -256,35 +265,6 @@ export default function Carousels(props) {
       </span>
     </div>
   );
-
-
-  // const marketing = (
-  //   <div className="carousel marketing">
-  //     <div className="introduction">
-  //       <div className="text">Featured article</div>
-  //       <div className="title">Essential adventures in Western Europe.</div>
-  //       <div className="buttons">
-  //         <a className="button">See more</a>
-  //       </div>
-  //     </div>
-  //     <div className="carousel-inner">
-  //       <div className="carousel-item">
-  //         <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-  //       </div>
-  //       <div className="carousel-item">
-  //       </div>
-  //       <div className="carousel-item">
-  //       </div>
-  //     </div>
-  //     <span className="previous">
-  //       <Button option="circle" size="" innerIcon="chevron-left" />
-  //     </span>
-  //     <span className="next">
-  //       <Button option="circle" size="" innerIcon="chevron-right" />
-  //     </span>
-  //   </div>
-  // );
-
 
   let content;
   if (props.type === 'image') {

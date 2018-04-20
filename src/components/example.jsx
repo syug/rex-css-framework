@@ -22,7 +22,7 @@ export function Example(props) {
 
 
 	return (
-    <div className="container">
+    <div className="page">
 			{contentData}
 		</div>
 	);
