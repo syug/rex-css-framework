@@ -107,6 +107,30 @@
   },
   {
     "component": "Section",
+    "className": "white-section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Scoped",
+          "jp": "スコープドサーチ"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "SearchBar",
+            "type": "scope outline"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
     "data": [
       {
         "component": "Heading",

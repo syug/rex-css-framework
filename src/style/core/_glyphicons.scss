@@ -1,8 +1,8 @@
 @font-face {
   font-family: rex-icon;
-  src: url("../fonts/rex-icon.eot?e28f67e8edf843ca2f4971fbb015d7d6?#iefix") format("embedded-opentype"),
-url("../fonts/rex-icon.woff2?e28f67e8edf843ca2f4971fbb015d7d6") format("woff2"),
-url("../fonts/rex-icon.woff?e28f67e8edf843ca2f4971fbb015d7d6") format("woff");
+  src: url("../fonts/rex-icon.eot?05a8516046f19dd8df960d655bc00c45?#iefix") format("embedded-opentype"),
+url("../fonts/rex-icon.woff2?05a8516046f19dd8df960d655bc00c45") format("woff2"),
+url("../fonts/rex-icon.woff?05a8516046f19dd8df960d655bc00c45") format("woff");
 }
 
 $_32-arrow-down-l: '\f101';
@@ -100,32 +100,32 @@ $_32-like-l: '\f15c';
 $_32-list-f: '\f15d';
 $_32-list-l: '\f15e';
 $_32-loading-l: '\f15f';
-$_32-location-f: '\f160';
-$_32-location-l: '\f161';
-$_32-login-l: '\f162';
-$_32-logo: '\f163';
-$_32-logout-l: '\f164';
-$_32-lucky-kuji-f: '\f165';
-$_32-lucky-kuji-l: '\f166';
-$_32-mail-f: '\f167';
-$_32-mail-l: '\f168';
-$_32-map-f: '\f169';
-$_32-map-l: '\f16a';
-$_32-menu: '\f16b';
-$_32-minus: '\f16c';
-$_32-mobile-phone-f: '\f16d';
-$_32-mobile-phone-l: '\f16e';
-$_32-movie-f: '\f16f';
-$_32-movie-l: '\f170';
-$_32-my-page-f: '\f171';
-$_32-my-page-l: '\f172';
-$_32-new-user-f: '\f173';
-$_32-new-window-l: '\f174';
-$_32-notice-generic-f: '\f175';
-$_32-notice-generic-l: '\f176';
-$_32-notice-user-f: '\f177';
-$_32-notice-user-l: '\f178';
-$_32-overflow-button: '\f179';
+$_32-loading-lg-l: '\f160';
+$_32-location-f: '\f161';
+$_32-location-l: '\f162';
+$_32-login-l: '\f163';
+$_32-logo: '\f164';
+$_32-logout-l: '\f165';
+$_32-lucky-kuji-f: '\f166';
+$_32-lucky-kuji-l: '\f167';
+$_32-mail-f: '\f168';
+$_32-mail-l: '\f169';
+$_32-map-f: '\f16a';
+$_32-map-l: '\f16b';
+$_32-menu: '\f16c';
+$_32-minus: '\f16d';
+$_32-mobile-phone-f: '\f16e';
+$_32-mobile-phone-l: '\f16f';
+$_32-movie-f: '\f170';
+$_32-movie-l: '\f171';
+$_32-my-page-f: '\f172';
+$_32-my-page-l: '\f173';
+$_32-new-user-f: '\f174';
+$_32-new-window-l: '\f175';
+$_32-notice-generic-f: '\f176';
+$_32-notice-generic-l: '\f177';
+$_32-notice-user-f: '\f178';
+$_32-notice-user-l: '\f179';
 $_32-paint-f: '\f17a';
 $_32-paint-l: '\f17b';
 $_32-paper-plane-f: '\f17c';
@@ -3175,6 +3175,37 @@ $_32-zoom-out-l: '\f1d8';
       }
     }
   }
+  @if variable-exists('_32-loading-lg') {
+    &.loading-lg {
+      &::before {
+        content: $_32-loading-lg;
+      }
+    }
+  }
+
+  @if variable-exists('_32-loading-lg-f') {
+    &.loading-lg-f {
+      &::before {
+        content: $_32-loading-lg-f;
+      }
+    }
+  }
+
+  @if variable-exists('_32-loading-lg-l') {
+    &.loading-lg-l {
+      &::before {
+        content: $_32-loading-lg-l;
+      }
+    }
+  }
+
+  @if variable-exists('_16-loading-lg') {
+    &.loading-lg-s {
+      &::before {
+        content: $_16-loading-lg;
+      }
+    }
+  }
   @if variable-exists('_32-location') {
     &.location {
       &::before {
@@ -3947,37 +3978,6 @@ $_32-zoom-out-l: '\f1d8';
     &.notice-user-s {
       &::before {
         content: $_16-notice-user;
-      }
-    }
-  }
-  @if variable-exists('_32-overflow-button') {
-    &.overflow-button {
-      &::before {
-        content: $_32-overflow-button;
-      }
-    }
-  }
-
-  @if variable-exists('_32-overflow-button-f') {
-    &.overflow-button-f {
-      &::before {
-        content: $_32-overflow-button-f;
-      }
-    }
-  }
-
-  @if variable-exists('_32-overflow-button-l') {
-    &.overflow-button-l {
-      &::before {
-        content: $_32-overflow-button-l;
-      }
-    }
-  }
-
-  @if variable-exists('_16-overflow-button') {
-    &.overflow-button-s {
-      &::before {
-        content: $_16-overflow-button;
       }
     }
   }
