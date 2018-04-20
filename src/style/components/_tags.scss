@@ -23,7 +23,7 @@ $label-font: 12px;
     border-radius: 12px;
   }
 }
-$tag-close-width: 22px;
+$tag-close-width: 21px;
 .tag-wrapper.icon {
   display: inline-block;
   padding-right: $tag-close-width;
@@ -33,7 +33,7 @@ $tag-close-width: 22px;
   .tag {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
-    padding-right: 2px;
+    padding-right: 3px;
     font-size: inherit;
   }
   .close {
