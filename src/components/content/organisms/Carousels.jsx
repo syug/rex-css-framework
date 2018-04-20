@@ -5,6 +5,58 @@ import Tab from '../molecules/tabs';
 import { Routes } from '../../../domain/middleware/routes';
 import { Icon } from '../atoms/icon';
 
+export function Previous(props) {
+  const option = props.option ? props.option : '';
+  const size = props.size ? props.size : '';
+  const innerIcon = props.innerIcon ? props.innerIcon : '';
+
+  return (
+    <span className="previous">
+      <Button option={option} size={size} innerIcon={innerIcon} />
+    </span>
+  );
+}
+
+export function Next(props) {
+  const option = props.option ? props.option : '';
+  const size = props.size ? props.size : '';
+  const innerIcon = props.innerIcon ? props.innerIcon : '';
+
+  return (
+    <span className="next">
+      <Button option={option} size={size} innerIcon={innerIcon} />
+    </span>
+  );
+}
+
+export function CarouselItem(props) {
+  const active = props.active ? 'active' : '';
+  const selected = props.selected ? 'selected' : '';
+  return (
+    <div className={`carousel-item ${active} ${selected}`}>
+      {props.children}
+    </div>
+  );
+}
+
+export function Indicator(props) {
+  const active = props.active;
+  const amount = props.amount;
+  let content = [];
+  for(let i = 0; i < amount; i++) {
+    let type;
+    if (active === i + 1) {
+      type = 'active';
+    }
+    content.push(<div className={`indicator ${type}`} key={i} />);
+  }
+
+  return (
+    <div className="indicator-group">
+      {content}
+    </div>
+  );
+}
 
 export default function Carousels(props) {
   const image = (
@@ -14,30 +66,25 @@ export default function Carousels(props) {
         <a className="button">See more</a>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item">
+        <CarouselItem>
           <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </div>
+        </CarouselItem>
+        <CarouselItem>
+          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+        </CarouselItem>
       </div>
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
-      <div className="indicator-group">
-        <div className="indicator active" />
-        <div className="indicator" />
-        <div className="indicator" />
-      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
+      <Indicator active={1} amount={3}/>
     </div>
   );
 
@@ -48,7 +95,7 @@ export default function Carousels(props) {
         <a className="button">See more</a>
       </div>
       <div className="carousel-inner">
-        <div className="carousel-item">
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -56,8 +103,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -65,8 +112,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -74,8 +121,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -83,19 +130,11 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
+        </CarouselItem>
       </div>
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
-      <div className="indicator-group">
-        <div className="indicator active" />
-        <div className="indicator" />
-        <div className="indicator" />
-      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
+      <Indicator active={1} amount={3}/>
     </div>
   );
 
@@ -107,7 +146,7 @@ export default function Carousels(props) {
       </div>
       <Tab type="border-top"/>
       <div className="carousel-inner">
-        <div className="carousel-item">
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -115,8 +154,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -124,8 +163,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -133,8 +172,8 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
-        <div className="carousel-item">
+        </CarouselItem>
+        <CarouselItem>
           <Card
             type="size"
             size="landscape"
@@ -142,127 +181,105 @@ export default function Carousels(props) {
             header="Sagano Bamboo Forest"
             image="img/bamboo.jpeg"
           />
-        </div>
+        </CarouselItem>
       </div>
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
-      <div className="indicator-group">
-        <div className="indicator active" />
-        <div className="indicator" />
-        <div className="indicator" />
-      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
+      <Indicator active={1} amount={3}/>
     </div>
   );
 
   const marketing = (
     <div className="carousel marketing">
-        <div className="introduction">
-          <div className="text">Featured article</div>
-          <div className="title">Essential adventures in Western Europe.</div>
-          <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
-        </div>
+      <div className="introduction">
+        <div className="text">Featured article</div>
+        <div className="title">Essential adventures in Western Europe.</div>
+        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
+      </div>
 
-        <div className="carousel-item active">
+      <CarouselItem active>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <div className="carousel-thumbnails bottom">
+        <CarouselItem selected>
           <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-        </div>
-        <div className="carousel-thumbnails bottom">
-          <div className="carousel-item selected">
-            <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-            <div className="caption">Title/Caption</div>
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-            <div className="caption">Title/Caption</div>
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
-            <div className="caption">Title/Caption</div>
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-            <div className="caption">Title/Caption</div>
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-            <div className="caption">Title/Caption</div>
-          </div>
-
-        </div>
-      {/* </div> */}
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+          <div className="caption">Title/Caption</div>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+          <div className="caption">Title/Caption</div>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
+          <div className="caption">Title/Caption</div>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+          <div className="caption">Title/Caption</div>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+          <div className="caption">Title/Caption</div>
+        </CarouselItem>
+      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
     </div>
   );
 
   const marketingThumbnailsFloat = (
     <div className="carousel marketing">
-        <div className="introduction">
-          <div className="text">Featured article</div>
-          <div className="title">Essential adventures in Western Europe.</div>
-          <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
-        </div>
-        <div className="carousel-item active">
+      <div className="introduction">
+        <div className="text">Featured article</div>
+        <div className="title">Essential adventures in Western Europe.</div>
+        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
+      </div>
+      <CarouselItem active>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <div className="carousel-thumbnails float">
+        <CarouselItem selected>
           <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-        </div>
-        <div className="carousel-thumbnails float">
-          <div className="carousel-item selected">
-            <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-          </div>
-          <div className="carousel-item">
-            <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-          </div>
-        </div>
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+        </CarouselItem>
+        <CarouselItem>
+          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+        </CarouselItem>
+      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
     </div>
   );
 
   const marketingTab = (
     <div className="carousel marketing">
-        <div className="introduction">
-          <div className="text">Featured article</div>
-          <div className="title">Essential adventures in Western Europe.</div>
-          <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
-        </div>
-        <div className="carousel-item active">
-          <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-        </div>
-        <div className="carousel-tab">
-          <Tab type="border-top"/>
-        </div>
-      <span className="previous">
-        <Button option="circle" size="" innerIcon="chevron-left" />
-      </span>
-      <span className="next">
-        <Button option="circle" size="" innerIcon="chevron-right" />
-      </span>
+      <div className="introduction">
+        <div className="text">Featured article</div>
+        <div className="title">Essential adventures in Western Europe.</div>
+        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
+      </div>
+      <div className="carousel-item active">
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </div>
+      <div className="carousel-tab">
+        <Tab type="border-top"/>
+      </div>
+      <Previous option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-left" />
     </div>
   );
 
