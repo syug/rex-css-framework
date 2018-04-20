@@ -3,7 +3,8 @@
 <p align="center">
     <img src="https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square" />
     <a href="https://github.com/rakuten-frontend/rex-css-framework/issues">
-      <img src="https://img.shields.io/badge/Help%20out-Solve an Issue-brightgreen.svg?longCache=true&style=flat-square" /></a>
+      <img src="https://img.shields.io/badge/Help%20out-Solve an Issue-brightgreen.svg?longCache=true&style=flat-square" />
+    </a>
   </p>
  <p align="center">
 The ReX CSS Framework is the base for all technology provided by the ReX project. This site contains CSS examples for all of our ReX components, as well as documentation on those components.
