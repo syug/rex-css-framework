@@ -1,6 +1,3 @@
-$icon-font-path: "/rexicon/fonts";
-$noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/";
-
 $rex-sass-asset-helper: false !default;
 //
 // Variables
@@ -78,8 +75,7 @@ $link-hover-decoration: underline !default;
 
 //== Typography
 //
-
-
+$noto-font-path: "//fonts.gstatic.com/ea/notosansjapanese/v6/" !default;
 
 @font-face {
    font-family: 'Noto Sans Japanese';
@@ -165,10 +161,15 @@ $headings-color:          $gray-darkest !default;
 // [converter] If $rex-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
 //** File name for all font files.
-$icon-font-name:          "rex-icons" !default;
+// $icon-font-name:          "rex-icons" !default;
+$icon-font-name:          "rex-icon" !default;
 //** Element ID within SVG icon file.
 $icon-font-svg-id:        "rex-icons" !default;
 $icon-size:               13;
+
+// ReX icon
+$icon-font-path: '../fonts/' !default;
+
 
 //== Components
 //
@@ -1003,10 +1004,4 @@ $blockquote-padding-x:          40px;
 
 //** Blockquote font size.
 $blockquote-font-size:          26px;
-
-
-//== Search
-//
-//##
-
 $search-input-active:           #f9f9f9;
