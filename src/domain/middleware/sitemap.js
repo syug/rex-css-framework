@@ -161,7 +161,7 @@ const COMPONENT_STYLES_CARDS = {
     'jp': 'カード'
   },
   'url': Routes.COMPONENT_STYLES_CARDS,
-  'disabled': true
+  'disabled': false
 };
 const COMPONENT_STYLES_CAROUSELS = {
   'text': {
