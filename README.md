@@ -1,7 +1,9 @@
 
 <p align="center"><img src="https://github.com/rakuten-frontend/rex-css-framework/blob/feature/new-readme/src/assets/img/github-logo.png?raw=true" width="300px" ></img></p>
 <p align="center">
+  <a href="https://github.com/rakuten-frontend/rex-css-framework/blob/feature/new-readme/LICENSE">
     <img src="https://img.shields.io/packagist/l/doctrine/orm.svg?style=flat-square" />
+    </a>
     <a href="https://github.com/rakuten-frontend/rex-css-framework/issues">
       <img src="https://img.shields.io/badge/Help%20out-Solve an Issue-brightgreen.svg?longCache=true&style=flat-square" />
     </a>
