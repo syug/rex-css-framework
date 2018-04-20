@@ -1,5 +1,5 @@
 
-<p align="center"><img src="https://github.com/rakuten-frontend/rex-css-framework/blob/feature/new-readme/src/assets/img/github-logo.svg?raw=true" width="150px" ></img></p>
+<p align="center"><img src="https://github.com/rakuten-frontend/rex-css-framework/blob/feature/new-readme/src/assets/img/github-logo.png?raw=true" width="300px" ></img></p>
 <p align="center">
   <!-- <a href="https://gitter.im/soshijs/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge">
   <img src="https://img.shields.io/badge/chat%20on-gitter-ff69b4.svg?style=flat-square" />
@@ -9,6 +9,7 @@
  <p align="center">
 The ReX CSS Framework is the base for all technology provided by the ReX project. This site contains CSS examples for all of our ReX components, as well as documentation on those components.
 </p>
+<hr>
 
 ## 👍 Easy to start, fun and familiar to use
 The ReX CSS framework, follows common naming conventions and standards used by Twitter Bootstrap because we have used some part of it to accelerate initial development. This should make it quite easy to use for developers who are familiar with Bootstrap, however we do not claim to be compatible now or in the future with any Twitter Bootstrap versions or be affiliated with Bootstrap in any other way.
