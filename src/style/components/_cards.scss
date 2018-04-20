@@ -6,7 +6,14 @@
 }
 
 .card {
+  position: relative;
   @include transition(all .2s cubic-bezier(.25,0,.45,1));
+  &.border {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+  }
+  &:hover {
+    box-shadow: 0 20px 12px -12px rgba(0, 0, 0, 0.12);
+  }
   &.landscape {
     @include cardBaseStyle(296px, 377px);
     > img {
@@ -53,7 +60,6 @@
   }
   // Full Image Style
   &.image {
-    position: relative;
     width: 376px;
     height: 200px;
     color: $white;
@@ -81,9 +87,6 @@
         }
       }
     }
-    &:hover {
-      box-shadow: 0 12px 8px -8px rgba(0, 0, 0, 0.12);
-    }
   }
   &.text {
     &.colored {
@@ -107,15 +110,12 @@
     width: 296px;
     min-height: 410px;
     background-color: $white;
-    position: relative;
+
     border-radius: 4px;
     > img {
       width: 100%;
       height: 200px;
       border-radius: 4px 4px 0 0;
-    }
-    &.border {
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
     }
     .content {
       @include contentStyle('panel');
@@ -144,7 +144,6 @@
       }
       .title {
         color: $gray-darkest;
-
       }
       .rating-wrapper {
         margin-top: 5px;
@@ -166,10 +165,12 @@
         border-top: 1px solid $gray-lighter;
       }
     }
-    &:hover {
-      box-shadow: 0 20px 12px -12px rgba(0, 0, 0, 0.12);
-    }
-
+  }
+  &.landscape,
+  &.square,
+  &.portrait,
+  &.wide,
+  &.panel {
     .card-menu.small {
       @extend %card-menu-base;
       @include list-unstyled;
