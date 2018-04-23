@@ -339,8 +339,32 @@
         "component": "Heading",
         "type": "h4",
         "text": {
-          "en": "Tag & Icon",
-          "jp": "Tag & Icon"
+          "en": "Icon",
+          "jp": "Icon"
+        }
+      },
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Tags",
+            "text": "Design",
+            "type": "icon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h4",
+        "text": {
+          "en": "Rounded & Icon",
+          "jp": "Rounded & Icon"
         }
       },
       {
