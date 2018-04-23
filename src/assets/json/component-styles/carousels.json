@@ -93,7 +93,7 @@
           {
             "component": "Carousels",
             "title": "carousel full image",
-            "type": "tab"
+            "type": "tabs"
           }
         ]
       }

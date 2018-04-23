@@ -58,179 +58,180 @@ export function Indicator(props) {
   );
 }
 
-export default function Carousels(props) {
-  const image = (
-    <div className="carousel image">
+export function image() {
+  return (
+    <div className="carousel-inner">
+      <CarouselItem>
+        <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+      </CarouselItem>
+      <CarouselItem>
+        <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+      </CarouselItem>
+      <CarouselItem>
+        <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+      </CarouselItem>
+      <CarouselItem>
+        <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+      </CarouselItem>
+      <CarouselItem>
+        <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
+      </CarouselItem>
+    </div>
+  );
+}
+
+export function card() {
+  return (
+    <div className="carousel-inner">
+      <CarouselItem>
+        <Card
+          type="size"
+          size="landscape"
+          description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+          header="Sagano Bamboo Forest"
+          image="img/bamboo.jpeg"
+        />
+      </CarouselItem>
+      <CarouselItem>
+        <Card
+          type="size"
+          size="landscape"
+          description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+          header="Sagano Bamboo Forest"
+          image="img/bamboo.jpeg"
+        />
+      </CarouselItem>
+      <CarouselItem>
+        <Card
+          type="size"
+          size="landscape"
+          description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+          header="Sagano Bamboo Forest"
+          image="img/bamboo.jpeg"
+        />
+      </CarouselItem>
+      <CarouselItem>
+        <Card
+          type="size"
+          size="landscape"
+          description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+          header="Sagano Bamboo Forest"
+          image="img/bamboo.jpeg"
+        />
+      </CarouselItem>
+    </div>
+  );
+}
+
+export function base(type) {
+  let inner;
+  switch (type) {
+    case 'image':
+      inner = image();
+      break;
+    case 'card':
+      inner = card();
+      break;
+    case 'tabs':
+      inner = card();
+      break;
+  };
+
+  const typeName = type === 'tabs' ? 'carousel-tab' : type;
+  const tab = type === 'tabs' ? <Tab type="border-top"/> : null;
+
+  return (
+    <div className={`carousel ${typeName}`}>
       <div className="title">title</div>
       <div className="buttons">
         <a className="button">See more</a>
       </div>
-      <div className="carousel-inner">
-        <CarouselItem>
-          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </CarouselItem>
-        <CarouselItem>
-          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </CarouselItem>
-        <CarouselItem>
-          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </CarouselItem>
-        <CarouselItem>
-          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </CarouselItem>
-        <CarouselItem>
-          <Card type="image" header="Sagano Bamboo Forest" image="img/bamboo.jpeg" />
-        </CarouselItem>
-      </div>
+      {tab}
+      {inner}
       <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-right" />
       <Indicator active={1} amount={3}/>
     </div>
   );
+}
 
-  const card = (
-    <div className="carousel card">
-      <div className="title">title</div>
-      <div className="buttons">
-        <a className="button">See more</a>
-      </div>
-      <div className="carousel-inner">
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-      </div>
-      <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
-      <Indicator active={1} amount={3}/>
+export function marketingThumbnailsBottom() {
+  return (
+    <div className="carousel-thumbnails bottom">
+      <CarouselItem selected>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+        <div className="caption">Title/Caption</div>
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+        <div className="caption">Title/Caption</div>
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
+        <div className="caption">Title/Caption</div>
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+        <div className="caption">Title/Caption</div>
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+        <div className="caption">Title/Caption</div>
+      </CarouselItem>
     </div>
   );
+}
 
-  const tabs = (
-    <div className="carousel carousel-tab">
-      <div className="title">title</div>
-      <div className="buttons">
-        <a className="button">See more</a>
-      </div>
+export function marketingThumbnailsFloat() {
+  return (
+    <div className="carousel-thumbnails float">
+      <CarouselItem selected>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem>
+        <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
+      </CarouselItem>
+    </div>
+  );
+}
+
+export function marketingBase(type) {
+  let thumbnails;
+
+  switch(type) {
+    case 'bottom':
+      thumbnails = marketingThumbnailsBottom();
+      break;
+    case 'float':
+      thumbnails = marketingThumbnailsFloat();
+      break;
+    case 'tab':
+      thumbnails = null;
+      break;
+  }
+
+  const tab = type === 'tab' ? (
+    <div className="carousel-tab">
       <Tab type="border-top"/>
-      <div className="carousel-inner">
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-        <CarouselItem>
-          <Card
-            type="size"
-            size="landscape"
-            description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
-            header="Sagano Bamboo Forest"
-            image="img/bamboo.jpeg"
-          />
-        </CarouselItem>
-      </div>
-      <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
-      <Indicator active={1} amount={3}/>
     </div>
-  );
+  ) : null;
 
-  const marketing = (
-    <div className="carousel marketing">
-      <div className="introduction">
-        <div className="text">Featured article</div>
-        <div className="title">Essential adventures in Western Europe.</div>
-        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
-      </div>
-
-      <CarouselItem active>
-        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-      </CarouselItem>
-      <div className="carousel-thumbnails bottom">
-        <CarouselItem selected>
-          <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-          <div className="caption">Title/Caption</div>
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-          <div className="caption">Title/Caption</div>
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
-          <div className="caption">Title/Caption</div>
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-          <div className="caption">Title/Caption</div>
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-          <div className="caption">Title/Caption</div>
-        </CarouselItem>
-      </div>
-      <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
-    </div>
-  );
-
-  const marketingThumbnailsFloat = (
+  return (
     <div className="carousel marketing">
       <div className="introduction">
         <div className="text">Featured article</div>
@@ -240,63 +241,37 @@ export default function Carousels(props) {
       <CarouselItem active>
         <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
       </CarouselItem>
-      <div className="carousel-thumbnails float">
-        <CarouselItem selected>
-          <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-        </CarouselItem>
-        <CarouselItem>
-          <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-        </CarouselItem>
-      </div>
+      {thumbnails}
+      {tab}
       <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
+      <Next option="circle" size="" innerIcon="chevron-right" />
     </div>
   );
+}
 
-  const marketingTab = (
-    <div className="carousel marketing">
-      <div className="introduction">
-        <div className="text">Featured article</div>
-        <div className="title">Essential adventures in Western Europe.</div>
-        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
-      </div>
-      <div className="carousel-item active">
-        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-      </div>
-      <div className="carousel-tab">
-        <Tab type="border-top"/>
-      </div>
-      <Previous option="circle" size="" innerIcon="chevron-left" />
-      <Next option="circle" size="" innerIcon="chevron-left" />
-    </div>
-  );
-
+export default function Carousels(props) {
   let content;
-  if (props.type === 'image') {
-    content = image;
-  } else if (props.type === 'card') {
-    content = card;
-  } else if (props.type === 'tab') {
-    content = tabs;
-  } else if (props.type === 'marketing') {
-    content = marketing;
-  } else if (props.type === 'marketing float') {
-    content = marketingThumbnailsFloat;
-  } else if (props.type === 'marketing tab') {
-    content = marketingTab;
-  } else { content = ''}
+  switch(props.type) {
+    case 'image':
+      content = base(props.type);
+      break;
+    case 'card':
+      content = base(props.type);
+      break;
+    case 'tabs':
+      content = base(props.type);
+      break;
+    case 'marketing':
+      content = marketingBase('bottom');
+      break;
+    case 'marketing float':
+      content = marketingBase('float');
+      break;
+    case 'marketing tab':
+      content = marketingBase('tab');
+      break;
+  }
+
   return content;
 }
 
