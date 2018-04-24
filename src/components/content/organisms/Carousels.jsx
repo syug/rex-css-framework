@@ -220,16 +220,19 @@ export function marketingBase(type) {
   switch(type) {
     case 'bottom':
       thumbnails = marketingThumbnailsBottom(true);
+      classes = `${classes} thumbnail-${type}`;
       break;
     case 'wide':
       thumbnails = marketingThumbnailsBottom(true);
-      classes += ' wide';
+      classes = `${classes} thumbnail-${type}`;
       break;
     case 'float':
       thumbnails = marketingThumbnailsFloat();
+      classes = `${classes} thumbnail-${type}`;
       break;
     case 'tab':
       thumbnails = null;
+      classes = `${classes} marketing-${type}`;
       break;
   }
 
