@@ -33,7 +33,7 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
+        "title": "Title",
         "type": "image"
       }
     ]
@@ -58,7 +58,7 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
+        "title": "Title",
         "type": "card"
       }
     ]
@@ -83,7 +83,7 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
+        "title": "Title",
         "type": "tabs"
       }
     ]
