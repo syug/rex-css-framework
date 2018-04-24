@@ -419,32 +419,8 @@
 @media (max-width: $screen-xs) {
   .carousel.marketing {
     @include introduction-font-size(5.8px, 21.5px, 6.6px, 5.8px);
-    .carousel-tab {
-      left: 52px;
-      right: 52px;
-      bottom: 12px;
-    }
-    .carousel-thumbnails {
-      height: 56px;
-      > .carousel-item img {
-        height: inherit;
-        width: 110px;
-      }
-      &.float {
-        bottom: 12px;
-        left: 52px;
-        width: calc(100% - 104px);
-      }
-      &.bottom {
-        .carousel-item {
-          .caption {
-            font-size: 10px;
-          }
-          &.selected:before {
-            top: 50px;
-          }
-        }
-      }
+    .carousel-tab, .carousel-thumbnails {
+      display: none;
     }
     .previous, .next {
       .btn.btn-circle {
@@ -475,32 +451,8 @@
 @media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
   .carousel.marketing {
     @include introduction-font-size(6.8px, 25.5px, 7.85px, 6.8px);
-    .carousel-tab {
-      left: 52px;
-      right: 52px;
-      bottom: 24px;
-    }
-    .carousel-thumbnails {
-      height: 72px;
-      > .carousel-item img {
-        height: inherit;
-        width: 140px;
-      }
-      &.float {
-        bottom: 24px;
-        left: 52px;
-        width: calc(100% - 104px);
-      }
-      &.bottom {
-        .carousel-item {
-          .caption {
-            font-size: 14px
-          }
-          &.selected:before {
-            top: 66px;
-          }
-        }
-      }
+    .carousel-tab, .carousel-thumbnails {
+      display: none;
     }
     .previous, .next {
       .btn.btn-circle {
