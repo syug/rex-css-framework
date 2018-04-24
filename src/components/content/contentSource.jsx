@@ -71,7 +71,7 @@ export function ComponentSelector(data, tabTarget, lang, key) {
   switch (data.component) {
     case 'Carousels':
       return (
-        <Carousels title={data.title} type={data.type} key={key} />
+        <Carousels title={data.title} caption={data.caption} more={data.more} type={data.type} key={key} />
       );
 
     case 'Slider':

@@ -124,7 +124,7 @@ export function card() {
   );
 }
 
-export function base(type) {
+export function base(type, condition) {
   let inner;
   switch (type) {
     case 'image':
@@ -143,7 +143,7 @@ export function base(type) {
 
   return (
     <div className={`carousel ${typeName}`}>
-      <div className="title">title</div>
+      <div className="title">{condition.title}</div>
       <div className="buttons">
         <a className="button">See more</a>
       </div>
@@ -212,7 +212,7 @@ export function marketingThumbnailsFloat() {
   );
 }
 
-export function marketingBase(type) {
+export function marketingBase(type, condition) {
   let classes = 'carousel marketing';
   let thumbnails;
   let prev;
@@ -247,9 +247,9 @@ export function marketingBase(type) {
   return (
     <div className={classes}>
       <div className="introduction">
-        <div className="text">Featured article</div>
-        <div className="title">Essential adventures in Western Europe.</div>
-        <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
+        <div className="title">{condition.title}</div>
+        <div className="caption">{condition.caption}</div>
+        <LabelWithIcon label={condition.more} icon="chevron-right" className="more"></LabelWithIcon>
       </div>
       {activeItem}
       {thumbnails}
@@ -296,28 +296,34 @@ export function thumbnailCarousel() {
 }
 
 export default function Carousels(props) {
+  const condition = {
+    title: props.title || '',
+    caption: props.caption || '',
+    more: props.more || '',
+  }
+
   let content;
   switch(props.type) {
     case 'image':
-      content = base(props.type);
+      content = base(props.type, condition);
       break;
     case 'card':
-      content = base(props.type);
+      content = base(props.type, condition);
       break;
     case 'tabs':
-      content = base(props.type);
+      content = base(props.type, condition);
       break;
     case 'marketing':
-      content = marketingBase('bottom');
+      content = marketingBase('bottom', condition);
       break;
     case 'marketing float':
-      content = marketingBase('float');
+      content = marketingBase('float', condition);
       break;
     case 'marketing tab':
-      content = marketingBase('tab');
+      content = marketingBase('tab', condition);
       break;
     case 'marketing wide':
-      content = marketingBase('wide');
+      content = marketingBase('wide', condition);
       break;
     case 'thumbnail':
       content = thumbnailCarousel();

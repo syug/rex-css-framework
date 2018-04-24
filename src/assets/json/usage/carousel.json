@@ -107,8 +107,10 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
-        "type": "marketing"
+        "type": "marketing",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
       }
     ]
   },
@@ -131,8 +133,10 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
-        "type": "marketing float"
+        "type": "marketing float",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
       }
     ]
   },
@@ -155,8 +159,10 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
-        "type": "marketing tab"
+        "type": "marketing tab",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
       }
     ]
   },
@@ -203,8 +209,10 @@
     "data": [
       {
         "component": "Carousels",
-        "title": "carousel full image",
-        "type": "marketing wide"
+        "type": "marketing wide",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
       }
     ]
   }

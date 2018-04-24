@@ -34,7 +34,7 @@
         "data": [
           {
             "component": "Carousels",
-            "title": "carousel full image",
+            "title": "title",
             "type": "image"
           }
         ]
@@ -63,7 +63,7 @@
         "data": [
           {
             "component": "Carousels",
-            "title": "carousel full image",
+            "title": "title",
             "type": "card"
           }
         ]
@@ -92,7 +92,7 @@
         "data": [
           {
             "component": "Carousels",
-            "title": "carousel full image",
+            "title": "title",
             "type": "tabs"
           }
         ]
@@ -121,8 +121,26 @@
         "data": [
           {
             "component": "Carousels",
-            "title": "carousel full image",
-            "type": "marketing"
+            "title": "title",
+            "type": "marketing",
+            "caption": "Essential adventures in Western Europe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "component": "Section",
+    "data": [
+      {
+        "component": "WorkingExample",
+        "cols": "12-12",
+        "data": [
+          {
+            "component": "Carousels",
+            "title": "title",
+            "type": "marketing float",
+            "caption": "Essential adventures in Western Europe."
           }
         ]
       }
@@ -138,23 +156,8 @@
           {
             "component": "Carousels",
             "title": "carousel full image",
-            "type": "marketing float"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "component": "Section",
-    "data": [
-      {
-        "component": "WorkingExample",
-        "cols": "12-12",
-        "data": [
-          {
-            "component": "Carousels",
-            "title": "carousel full image",
-            "type": "marketing tab"
+            "type": "marketing tab",
+            "caption": "Essential adventures in Western Europe."
           }
         ]
       }
