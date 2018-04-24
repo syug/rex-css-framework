@@ -29,19 +29,19 @@
   }
 }
 
-@mixin prevNextButtons($top, $prevLeft, $NextRight) {
+@mixin prevNextButtons($top, $prevLeft, $nextRight) {
   .previous, .next {
     position: absolute;
-    top: 150px;
+    top: $top;
   }
   .previous {
-    left: 18px;
+    left: $prevLeft;
     .btn.btn-circle {
       box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
     }
   }
   .next {
-    right: 18px;
+    right: $nextRight;
     .btn.btn-circle {
       box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
     }
@@ -141,7 +141,12 @@
       background-color: $white;
       color: $brand-primary;
     }
+  }
+  &.card {
     @include prevNextButtons(245px, -16px, -16px);
+  }
+  &.carousel-tab {
+    @include prevNextButtons(289px, -16px, -16px);
   }
   &.marketing {
     position: relative;
