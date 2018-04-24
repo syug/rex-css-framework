@@ -91,6 +91,7 @@ export function card() {
           description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
           header="Sagano Bamboo Forest"
           image="img/bamboo.jpeg"
+          border
         />
       </CarouselItem>
       <CarouselItem>
@@ -100,6 +101,7 @@ export function card() {
           description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
           header="Sagano Bamboo Forest"
           image="img/bamboo.jpeg"
+          border
         />
       </CarouselItem>
       <CarouselItem>
@@ -109,6 +111,7 @@ export function card() {
           description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
           header="Sagano Bamboo Forest"
           image="img/bamboo.jpeg"
+          border
         />
       </CarouselItem>
       <CarouselItem>
@@ -118,6 +121,7 @@ export function card() {
           description="According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
           header="Sagano Bamboo Forest"
           image="img/bamboo.jpeg"
+          border
         />
       </CarouselItem>
     </div>
@@ -137,8 +141,15 @@ export function base(type, condition) {
       inner = card();
       break;
   };
+  let typeName;
+  if (type === 'tabs') {
+    typeName = 'carousel-tab';
+  } else if (type === 'card') {
+    typeName = 'carousel-card';
+  } else {
+    typeName = type;
+  }
 
-  const typeName = type === 'tabs' ? 'carousel-tab' : type;
   const tab = type === 'tabs' ? <Tab type="border-top"/> : null;
 
   return (

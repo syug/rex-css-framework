@@ -87,7 +87,6 @@
 }
 %indicators-style {
   .indicator-group {
-    margin-top: 0.75em;
     text-align: center;
     .indicator {
       display: inline-block;
@@ -116,6 +115,7 @@
     max-width: 1256px;
     @extend %carousel-card-style;
     .carousel-inner {
+      min-height: 215px;
       .carousel-item {
         .title {
           color: $white;
@@ -134,15 +134,18 @@
       margin-top: 16px;
     }
   }
-  &.card, &.carousel-tab {
+  &.carousel-card, &.carousel-tab {
     max-width: 1200px;
     @extend %carousel-card-style;
     .btn.btn-circle {
       background-color: $white;
       color: $brand-primary;
     }
+    .carousel-inner {
+      min-height: 390px;
+    }
   }
-  &.card {
+  &.carousel-card {
     @include prevNextButtons(245px, -16px, -16px);
   }
   &.carousel-tab {
