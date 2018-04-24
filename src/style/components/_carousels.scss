@@ -158,7 +158,6 @@
       display: block;
       padding-top: 56.3%;
     }
-
     .introduction {
       position: absolute;
       top: 36%;
@@ -298,6 +297,117 @@
     .next {
       right: 4%;
       z-index: 3;
+    }
+    &.wide {
+      &::before {
+        padding-top: 48.85%;
+      }
+      overflow: unset;
+      .carousel-main-items {
+        width: 100%;
+        overflow: hidden;
+        .carousel-item.active {
+          width: 85%;
+          border-right: 6px solid $white;
+          border-left: 6px solid $white;
+          left: 7.5%;
+        }
+        .prev-item, .next-item {
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 7.5%;
+          > img {
+            position: absolute;
+            height: 100%;
+          }
+        }
+        .prev-item {
+          left: 0;
+          > img {
+            right: 0;
+          }
+        }
+        .next-item {
+          right: 0;
+          > img {
+            left: 0;
+          }
+        }
+      }
+      .carousel-thumbnails.bottom {
+        bottom: auto;
+        left: calc(7.5% + 6px);
+        width: calc(85% - 12px);
+        overflow: hidden;
+      }
+      .introduction {
+        left: 17.5%;
+      }
+      .previous {
+        left: 11.5%;
+      }
+      .next {
+        right: 11.5%;
+      }
+    }
+  }
+  &.thumbnail {
+    max-width: 584px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 88px;
+    overflow: hidden;
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 75%;
+    }
+    .carousel-item.active {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .carousel-thumbnails {
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      height: 88px;
+      &.bottom {
+        bottom: 0;
+        left: 0;
+        .carousel-item {
+          border: 1px solid $white;
+          &.selected:before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: $green-medium-light;
+            top: 82px;
+            left: 0;
+          }
+        }
+      }
+      .carousel-item {
+        position: relative;
+        color: $white;
+        cursor: pointer;
+        height: inherit;
+        img {
+          width: 96px;
+          height: 88px;
+          object-fit: cover;
+        }
+      }
     }
   }
 }

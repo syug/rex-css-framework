@@ -32,8 +32,9 @@ export function Next(props) {
 export function CarouselItem(props) {
   const active = props.active ? 'active' : '';
   const selected = props.selected ? 'selected' : '';
+  const classes = props.type ? props.type : '';
   return (
-    <div className={`carousel-item ${active} ${selected}`}>
+    <div className={`carousel-item ${active} ${selected} ${classes}`}>
       {props.children}
     </div>
   );
@@ -155,7 +156,8 @@ export function base(type) {
   );
 }
 
-export function marketingThumbnailsBottom() {
+export function marketingThumbnailsBottom(withCaption) {
+  const caption = withCaption ? <div className="caption">Title/Caption</div> : null;
   return (
     <div className="carousel-thumbnails bottom">
       <CarouselItem selected>
@@ -163,23 +165,23 @@ export function marketingThumbnailsBottom() {
       </CarouselItem>
       <CarouselItem>
         <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-        <div className="caption">Title/Caption</div>
+        {caption}
       </CarouselItem>
       <CarouselItem>
         <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-        <div className="caption">Title/Caption</div>
+        {caption}
       </CarouselItem>
       <CarouselItem>
         <img src={`${Routes.SITE_ROOT}img/marketing3.png`} alt="" />
-        <div className="caption">Title/Caption</div>
+        {caption}
       </CarouselItem>
       <CarouselItem>
         <img src={`${Routes.SITE_ROOT}img/marketing1.png`} alt="" />
-        <div className="caption">Title/Caption</div>
+        {caption}
       </CarouselItem>
       <CarouselItem>
         <img src={`${Routes.SITE_ROOT}img/marketing2.png`} alt="" />
-        <div className="caption">Title/Caption</div>
+        {caption}
       </CarouselItem>
     </div>
   );
@@ -211,11 +213,17 @@ export function marketingThumbnailsFloat() {
 }
 
 export function marketingBase(type) {
+  let classes = 'carousel marketing';
   let thumbnails;
-
+  let prev;
+  let next;
   switch(type) {
     case 'bottom':
-      thumbnails = marketingThumbnailsBottom();
+      thumbnails = marketingThumbnailsBottom(true);
+      break;
+    case 'wide':
+      thumbnails = marketingThumbnailsBottom(true);
+      classes += ' wide';
       break;
     case 'float':
       thumbnails = marketingThumbnailsFloat();
@@ -231,22 +239,57 @@ export function marketingBase(type) {
     </div>
   ) : null;
 
+  const activeItem = carouselActiveItem(type);
+
   return (
-    <div className="carousel marketing">
+    <div className={classes}>
       <div className="introduction">
         <div className="text">Featured article</div>
         <div className="title">Essential adventures in Western Europe.</div>
         <LabelWithIcon label="Read more" icon="chevron-right" className="more"></LabelWithIcon>
       </div>
-      <CarouselItem active>
-        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
-      </CarouselItem>
+      {activeItem}
       {thumbnails}
       {tab}
       <Previous option="circle" size="" innerIcon="chevron-left" />
       <Next option="circle" size="" innerIcon="chevron-right" />
     </div>
   );
+}
+
+export function carouselActiveItem(type) {
+  const content = type === 'wide' ? (
+    <div className="carousel-main-items">
+      <CarouselItem type="prev-item">
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem active>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      <CarouselItem type="next-item">
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+    </div>
+  ) : (
+    <CarouselItem active>
+      <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+    </CarouselItem>
+  );
+
+  return content;
+}
+
+export function thumbnailCarousel() {
+  const withCaption = false;
+  return (
+    <div className="carousel thumbnail">
+      <CarouselItem active>
+        <img src={`${Routes.SITE_ROOT}img/landscape.png`} alt="" />
+      </CarouselItem>
+      {marketingThumbnailsBottom(withCaption)}
+    </div>
+  );
+
 }
 
 export default function Carousels(props) {
@@ -269,6 +312,12 @@ export default function Carousels(props) {
       break;
     case 'marketing tab':
       content = marketingBase('tab');
+      break;
+    case 'marketing wide':
+      content = marketingBase('wide');
+      break;
+    case 'thumbnail':
+      content = thumbnailCarousel();
       break;
   }
 

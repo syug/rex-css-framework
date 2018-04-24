@@ -160,7 +160,6 @@
       }
     ]
   },
-
   {
     "component": "Section",
     "data": [
@@ -169,11 +168,9 @@
         "cols": "12-12",
         "data": [
           {
-            "component": "Cards",
-            "type": "size",
-            "size": "landscape",
-            "header": "Rakuten Travel",
-            "description": "According to travelers, the Kyoto Sagano Bamboo forest is one of world's most beautiful groves."
+            "component": "Carousels",
+            "title": "carousel full image",
+            "type": "thumbnail"
           }
         ]
       }

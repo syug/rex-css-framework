@@ -159,6 +159,53 @@
         "type": "marketing tab"
       }
     ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Thumbnail Carousel",
+          "jp": "サムネイルカルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "centered-block",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "thumbnail"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing Wide",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Carousels",
+        "title": "carousel full image",
+        "type": "marketing wide"
+      }
+    ]
   }
-
 ]
