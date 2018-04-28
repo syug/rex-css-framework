@@ -26,8 +26,8 @@
     "data": [
       {
         "component": "Download",
-        "name": "Rakuten Front-end / rex-css-framework repo",
-        "url": "https://git.rakuten-it.com/projects/REX/repos/rex-css-framework/browse",
+        "name": "Rakuten Front-end / rex-css-framework",
+        "url": "https://github.com/rakuten-frontend/rex-css-framework",
         "date": "-",
         "icon": "server-l"
       }

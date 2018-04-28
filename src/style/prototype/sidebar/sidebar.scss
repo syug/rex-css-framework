@@ -14,12 +14,24 @@
       @extend %logo-width;
       height: auto;
     }
+    .corp-logo {
+      display: inline-block;
+      margin-bottom: 40px;
+      opacity: .9;
+    }
   }
 
   .version {
     color: $gray-medium-light;
     font-weight: bold;
     margin-bottom: 40px;
+  }
+
+  .corp-logo {
+    img {
+      @extend %logo-width;
+      opacity: .9;
+    }
   }
   
 	@import "sidebar/menu";

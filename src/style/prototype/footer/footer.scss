@@ -7,8 +7,16 @@ footer {
       margin: 0 auto;
       margin-top: 32px;
       max-width: $content-width;
+      .extra-small {
+        float: left;
+      }
+      .logo {
+        img {
+          width: 100px;
+          float: right;
+        }
+      }
     }
-  
   }
   
   @import "pagination";

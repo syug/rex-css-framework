@@ -2,6 +2,7 @@ import * as React from 'react';
 import { clearSearchAction } from 'domain/store/actions/searchAction';
 import { Logo } from './logo/logo';
 import { Menu } from './menu/menu';
+import rlogo from '../../assets/img/r-logo-white.svg';
 
 export function Sidebar(props) {
 
@@ -23,6 +24,9 @@ export function Sidebar(props) {
         <Logo colorSelect={colorSelect} />
         <div className="version">v0.2.2</div>
         <Menu menu={menu} localization={localization} />
+        <a href='https://corp.rakuten.co.jp/' className="corp-logo" >
+          <img src={rlogo} />
+        </a>
       </nav>
     </section>
   );
