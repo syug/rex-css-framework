@@ -45,15 +45,15 @@ module.exports = {
 
   // entry: ['./src/main'],
   entry: {
-    'rex-default': './src/style/prototype/app-default',
-    'rex-blue': './src/style/prototype/app-blue',
-    // 'rex-red': './src/style/prototype/app-red',
-    // 'rex-green': './src/style/prototype/app-green',
-    // 'rex-yellow': './src/style/prototype/app-yellow',
-    // 'rex-purple': './src/style/prototype/app-purple',
-    // 'rex-pink': './src/style/prototype/app-pink',
-    // 'rex-blue': './src/style/prototype/app-blue',
-    // 'rex-dark-blue': './src/style/prototype/app-dark-blue'
+    'rex-default': './src/style/themes/theme-default',
+    'rex-blue': './src/style/themes/theme-blue',
+    'rex-red': './src/style/themes/theme-red',
+    'rex-green': './src/style/themes/theme-green',
+    'rex-yellow': './src/style/themes/theme-yellow',
+    'rex-purple': './src/style/themes/theme-purple',
+    'rex-pink': './src/style/themes/theme-pink',
+    'rex-blue': './src/style/themes/theme-blue',
+    'rex-dark-blue': './src/style/themes/theme-dark-blue'
   },
   cache: true,
 
