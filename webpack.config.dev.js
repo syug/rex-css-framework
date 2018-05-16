@@ -6,17 +6,7 @@ webpackConfig.devServer = {
   quiet: false,
   hot: true,
   open: true,
-  openPage: 'css-framework/',
-  historyApiFallback: {
-    index: '/css-framework/',
-  },
+  openPage: 'rex-default.css',
 };
-
-webpackConfig.module.rules.push(
-  {
-    test: /\.scss$|\.sass$/,
-    use: ['style-loader', 'css-loader', 'sass-loader'],
-  }
-);
 
 module.exports = webpackConfig;
