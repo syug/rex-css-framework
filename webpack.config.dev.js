@@ -22,7 +22,7 @@ common.devServer = {
   quiet: false,
   hot: true,
   open: true,
-  openPage: 'rex-default.css',
+  openPage: 'index.html',
 };
 
 module.exports = merge(common, {
