@@ -43,7 +43,6 @@ const rules = [
 
 module.exports = {
 
-  // entry: ['./src/main'],
   entry: {
     'rex-default': './src/style/themes/theme-default',
     'rex-blue': './src/style/themes/theme-blue',
@@ -69,10 +68,7 @@ module.exports = {
       path.resolve('src'),
     ],
     extensions: [
-      '.webpack.js',
-      '.web.js',
       '.js',
-      '.jsx',
       '.scss',
       '.sass',
     ],
