@@ -27,6 +27,7 @@
   ],
   "devDependencies": {
     "autoprefixer": "^8.1.0",
+    "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^0.28.7",
     "empty": "^0.10.1",
     "extract-text-webpack-plugin": "^2.1.2",
@@ -35,15 +36,13 @@
     "lodash": "^4.17.4",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.1.1",
+    "pre-commit": "^1.2.2",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.17.0",
     "url-loader": "^0.6.2",
     "webpack": "^2.5.1",
-    "webpack-dev-server": "^2.4.4"
+    "webpack-dev-server": "^2.4.4",
+    "webpack-merge": "^4.1.2"
   },
-  "dependencies": {
-    "clean-webpack-plugin": "^0.1.17",
-    "pre-commit": "^1.2.2",
-    "webpack-merge": "^4.1.1"
-  }
+  "dependencies": {}
 }
