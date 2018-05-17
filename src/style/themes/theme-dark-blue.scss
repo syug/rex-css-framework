@@ -1,10 +1,10 @@
-/*=============================================
-=           Rex Frontend Framework           =
-=============================================*/
-// Core variables and mixins
+//////////
+// Entry point for darc-blue theme
+//////////
+
+// Color settings
 @import "../core/rex_colors";
-/*==============================
-=      Customisation          =
-==============================*/
 @import "./colors/dark-blue";
+
+// Main
 @import "../main.scss";

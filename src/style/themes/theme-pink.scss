@@ -1,10 +1,10 @@
-/*=============================================
-=           Rex Frontend Framework           =
-=============================================*/
-// Core variables and mixins
+//////////
+// Entry point for pink theme
+//////////
+
+// Color settings
 @import "../core/rex_colors";
-/*==============================
-=      Customisation          =
-==============================*/
 @import "./colors/pink";
+
+// Main
 @import "../main.scss";
