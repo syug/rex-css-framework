@@ -1,22 +1,33 @@
 const path = require('path');
-const webpackConfig = require('./webpack.config.common.js');
+const webpack = require('webpack');
+const merge = require('webpack-merge');
+const common = require('./webpack.config.common');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-webpackConfig.output.path = path.resolve(__dirname, 'dev');
-webpackConfig.devServer = {
+const plugins = [
+  new webpack.HotModuleReplacementPlugin(),
+  new HtmlWebpackPlugin({
+    title: 'ReX CSS Framework',
+    template: './dev/index.html',
+    excludeChunks: ['js'],
+  }),
+];
+
+const rules = [
+
+];
+
+common.output.path = path.resolve(__dirname, 'dev');
+common.devServer = {
   quiet: false,
   hot: true,
   open: true,
-  openPage: 'css-framework/',
-  historyApiFallback: {
-    index: '/css-framework/',
-  },
+  openPage: 'index.html',
 };
 
-webpackConfig.module.rules.push(
-  {
-    test: /\.scss$|\.sass$/,
-    use: ['style-loader', 'css-loader', 'sass-loader'],
-  }
-);
-
-module.exports = webpackConfig;
+module.exports = merge(common, {
+  plugins,
+  module: {
+    rules,
+  },
+});

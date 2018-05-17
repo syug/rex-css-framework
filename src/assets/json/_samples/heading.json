@@ -1,9 +1,0 @@
-{
-	"component": "Heading",
-	"type": "h1",
-	"target": ["designer","developer"],
-	"text": {
-		"en": "Lists",
-		"jp": ""
-	}
-}
