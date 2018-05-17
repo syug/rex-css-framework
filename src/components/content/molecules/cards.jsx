@@ -158,8 +158,10 @@ export default function Cards(props) {
 
 export function OverflowMenu(props) {
   const classNames = {
-    wrapper: 'card-menu-wrapper',
-    cardMenu: 'card-menu',
+    // wrapper: 'card-menu-wrapper',
+    // cardMenu: 'card-menu',
+    wrapper: 'dropdown-menu-wrapper',
+    cardMenu: 'dropdown-menu',
   };
 
   switch (props.submenu) {
