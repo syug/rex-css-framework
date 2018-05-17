@@ -181,7 +181,7 @@
         left: 0;
         padding-top: 56px;
         padding-bottom: 56px;
-        &::before {
+        .close::before {
           content: $_32-x;
           font-family: rex-icon;
           position: absolute;

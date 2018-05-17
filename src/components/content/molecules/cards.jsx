@@ -163,6 +163,7 @@ export function OverflowMenu(props) {
     wrapper: 'dropdown-menu-wrapper',
     cardMenu: 'dropdown-menu',
   };
+  let close;
 
   switch (props.submenu) {
     case 'small':
@@ -170,6 +171,7 @@ export function OverflowMenu(props) {
       break;
     case 'full':
       classNames.wrapper += ' full';
+      close = <span className="close" />;
       break;
     default:
       break;
@@ -184,16 +186,17 @@ export function OverflowMenu(props) {
     </div>
   );
 
-  function addMenuWrapper(content, WrapperClassName) {
+  function addMenuWrapper(content, WrapperClassName, close) {
     return (
       <div className={WrapperClassName}>
+        {close}
         {content}
         <div className="separeted-link"><a>Separated link</a></div>
       </div>
     );
   }
 
-  const content = props.submenu === 'small' ? base : addMenuWrapper(base, classNames.wrapper);
+  const content = props.submenu === 'small' ? base : addMenuWrapper(base, classNames.wrapper, close);
 
   return content;
 }
