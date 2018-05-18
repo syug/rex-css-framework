@@ -7,7 +7,7 @@
         "type": "h1",
         "text": {
           "en": "Breadcrumbs",
-          "jp": "パンくず"
+          "jp": "パンくずリスト"
         }
       },
       {
@@ -16,7 +16,10 @@
         "data": [
           {
             "component": "Breadcrumbs",
-            "text": ["link1", "link2", "link3"]
+            "text": {
+                "en": ["link1", "link2", "link3"],
+                "jp": ["リンク1", "リンク2", "リンク3"]
+            }
          }
         ]
       }

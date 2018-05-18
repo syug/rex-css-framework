@@ -122,7 +122,7 @@ export function ComponentSelector(data, tabTarget, lang, key) {
 
     case 'Breadcrumbs':
       return (
-        <Breadcrumbs text={data.text} key={key} />
+        <Breadcrumbs text={data.text[lang]} key={key} />
       );
 
     case 'Tabs':

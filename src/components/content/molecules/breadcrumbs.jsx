@@ -1,10 +1,33 @@
 import * as React from 'react';
 
+function isActive(isLast, t){
+  if(isLast){
+    return {
+      class: 'active',
+      child: (t)
+    }
+  } else {
+    return {
+      class: '',
+      child: (<a href="#">{t}</a>)
+    }
+  }
+}
+
 export default function Breadcrumnbs(props) {
   const text = props.text;
+  const lastKey = text.length - 1;
+  const children = text.map((t, index) => {
+    const sibling = isActive(index === lastKey, t)
+      return (
+        <li className={sibling.class} key={index.toString()}>
+          {sibling.child}
+        </li>
+      )
+  });
   return (
     <ul className="breadcrumbs">
-      {text.map((t, index) => <li className={index === (text.length - 1) ? 'active' : null} key={index.toString()}><a>{t}</a></li>)}
+      {children}
     </ul>
   );
 }
