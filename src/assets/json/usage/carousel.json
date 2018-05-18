@@ -1,0 +1,219 @@
+[
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h1",
+        "text": {
+          "en": "Carousel Examples",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Full Image",
+          "jp": "Full Image"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "centered-block",
+    "data": [
+      {
+        "component": "Carousels",
+        "title": "Title",
+        "type": "image"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Card",
+          "jp": "Card"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "centered-block",
+    "data": [
+      {
+        "component": "Carousels",
+        "title": "Title",
+        "type": "card"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Tabs",
+          "jp": "Tabs"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "centered-block",
+    "data": [
+      {
+        "component": "Carousels",
+        "title": "Title",
+        "type": "tabs"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "marketing",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Float",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "marketing float",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing with Tab",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "marketing tab",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Thumbnail Carousel",
+          "jp": "サムネイルカルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "centered-block",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "thumbnail"
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "className": "center",
+    "data": [
+      {
+        "component": "Heading",
+        "type": "h2",
+        "text": {
+          "en": "Marketing Wide",
+          "jp": "カルーセル"
+        }
+      }
+    ]
+  },
+  {
+    "component": "Row",
+    "data": [
+      {
+        "component": "Carousels",
+        "type": "marketing wide",
+        "title": "Featured article",
+        "caption": "Essential adventures in Western Europe.",
+        "more": "Read more"
+      }
+    ]
+  }
+]

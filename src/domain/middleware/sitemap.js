@@ -81,12 +81,12 @@ const FOUNDATION_BUTTONS = {
   'disabled': false
 };
 const FOUNDATION_DROPDOWNS = {
-	'text': {
-		'en': 'Dropdown buttons',
-		'jp': 'ドロップダウンボタン'
-	},
-	'url': Routes.FOUNDATION_DROPDOWNS,
-	'disabled': false
+  'text': {
+    'en': 'Dropdown buttons',
+    'jp': 'ドロップダウンボタン'
+  },
+  'url': Routes.FOUNDATION_DROPDOWNS,
+  'disabled': false
 };
 const FOUNDATION_INPUTS = {
   'text': {
@@ -169,15 +169,15 @@ const COMPONENT_STYLES_CAROUSELS = {
     'jp': 'カルーセル'
   },
   'url': Routes.COMPONENT_STYLES_CAROUSELS,
-  'disabled': true
+  'disabled': false
 };
 const COMPONENT_STYLES_INDICATORS = {
-	'text': {
-		'en': 'Indicators',
-		'jp': 'インディケーターズ'
-	},
-	'url': Routes.COMPONENT_STYLES_INDICATORS,
-	'disabled': false
+  'text': {
+    'en': 'Indicators',
+    'jp': 'インディケーターズ'
+  },
+  'url': Routes.COMPONENT_STYLES_INDICATORS,
+  'disabled': false
 };
 const COMPONENT_STYLES_LANGUAGE_SWITCHER = {
   'text': {
@@ -228,12 +228,12 @@ const COMPONENT_STYLES_TRACK = {
   'disabled': false
 };
 const COMPONENT_STYLES_SLIDER = {
-	'text': {
-		'en': 'Slider',
-		'jp': 'スライダー'
-	},
-	'url': Routes.COMPONENT_STYLES_SLIDER,
-	'disabled': false
+  'text': {
+    'en': 'Slider',
+    'jp': 'スライダー'
+  },
+  'url': Routes.COMPONENT_STYLES_SLIDER,
+  'disabled': false
 };
 const COMPONENT_STYLES_MENU_LISTS = {
   'text': {
@@ -243,6 +243,17 @@ const COMPONENT_STYLES_MENU_LISTS = {
   'url': Routes.COMPONENT_STYLES_MENU_LISTS,
   'disabled': false
 };
+
+// Component styles
+const USAGE_CAROUSEL = {
+  'text': {
+    'en': 'Carousel',
+    'jp': 'カルーセル'
+  },
+  'url': Routes.USAGE_CAROUSEL,
+  'disabled': false
+};
+
 
 // Sitemap
 export const Sitemap = {
@@ -295,6 +306,12 @@ export const Sitemap = {
         COMPONENT_STYLES_SLIDER,
         COMPONENT_STYLES_TABS,
         COMPONENT_STYLES_TRACK
+      ]
+    },
+    {
+      'text': 'Usage',
+      'list': [
+        USAGE_CAROUSEL
       ]
     }
   ]

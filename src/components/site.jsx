@@ -3,7 +3,7 @@ import { Sidebar } from './sidebar/sidebar';
 import { Page } from './content/page';
 
 export function Site(props) {
-	
+
 	const { menu, tabs, footer, colorSelect, localization, search, route: {contentSource}} = props;
 
   return (

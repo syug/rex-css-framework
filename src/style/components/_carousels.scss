@@ -1,0 +1,497 @@
+@mixin icon-position-top($top: 0px) {
+  .carousel.marketing {
+    .introduction {
+      .button-area {
+        .rex-icon {
+          top: $top;
+        }
+      }
+    }
+  }
+}
+
+@mixin introduction-font-size($text, $title, $more, $icon) {
+  .introduction {
+    .title {
+      font-size: $text;
+    }
+    .caption {
+      font-size: $title;
+    }
+    .button-area {
+      .more {
+        font-size: $more;
+      }
+      .rex-icon {
+        font-size: $icon;
+      }
+    }
+  }
+}
+
+@mixin prevNextButtons($top, $prevLeft, $nextRight) {
+  .previous, .next {
+    position: absolute;
+    top: $top;
+  }
+  .previous {
+    left: $prevLeft;
+    .btn.btn-circle {
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+    }
+  }
+  .next {
+    right: $nextRight;
+    .btn.btn-circle {
+      box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+    }
+  }
+}
+
+%carousel-card-title {
+  > .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: $black;
+    display: inline-block;
+  }
+}
+%carousel-card-buttons {
+  .buttons {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    .button {
+      color: $blue;
+      text-decoration: none;
+      &:not(:first-of-type)::before {
+        content: "";
+        margin-left: 6px;
+      }
+    }
+  }
+}
+%carousel-card-inner {
+  .carousel-inner {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 24px;
+    .carousel-item {
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+  }
+
+}
+%indicators-style {
+  .indicator-group {
+    text-align: center;
+    .indicator {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      margin: 2px;
+      background-color: $white;
+      border: 1px solid $brand-primary;
+      &.active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+%carousel-card-style {
+  position: relative;
+  @extend %carousel-card-title;
+  @extend %carousel-card-buttons;
+  @extend %carousel-card-inner;
+  @extend %indicators-style;
+}
+
+.carousel {
+  &.image {
+    max-width: 1256px;
+    @extend %carousel-card-style;
+    .carousel-inner {
+      min-height: 215px;
+      .carousel-item {
+        .title {
+          color: $white;
+        }
+      }
+    }
+    .btn.btn-circle {
+      background-color: $white;
+      color: $brand-primary;
+    }
+    @include prevNextButtons(150px, 18px, 18px);
+  }
+  &.carousel-tab {
+    .tab {
+      display: block;
+      margin-top: 16px;
+    }
+  }
+  &.carousel-card, &.carousel-tab {
+    max-width: 1200px;
+    @extend %carousel-card-style;
+    .btn.btn-circle {
+      background-color: $white;
+      color: $brand-primary;
+    }
+    .carousel-inner {
+      min-height: 390px;
+    }
+  }
+  &.carousel-card {
+    @include prevNextButtons(245px, -16px, -16px);
+  }
+  &.carousel-tab {
+    @include prevNextButtons(289px, -16px, -16px);
+  }
+  &.marketing {
+    position: relative;
+    width: 100%;
+    margin-bottom: 88px;
+    &:before {
+      content: "";
+      display: block;
+      padding-top: 48.85%;
+    }
+    &.thumbnail-float, &.marketing-tab {
+      &::before {
+        padding-top: 56.3%;
+      }
+    }
+    .introduction {
+      position: absolute;
+      top: 36%;
+      left: 10%;
+      z-index: 3;
+      color: $white;
+      display: inline-block;
+      .title {
+        font-size: 14px;
+      }
+      .caption {
+        line-height: 1;
+        font-size: 52px;
+        width: 57%;
+      }
+      .button-area {
+        margin-top: 8px;
+        color: $white;
+        cursor: pointer;
+        display: inline-block;
+        .more {
+          color: inherit;
+          text-decoration: none;
+          font-size: 16px;
+        }
+        .rex-icon {
+          color: inherit;
+          font-size: 14px;
+          top: 1px;
+          left: 4px;
+        }
+      }
+    }
+    .carousel-item.active {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .carousel-thumbnails {
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      height: 88px;
+      &.bottom {
+        bottom: auto;
+        left: 0;
+        .carousel-item {
+          border: 1px solid $white;
+          .caption {
+            position: absolute;
+            top: 45%;
+            left: 16px;
+            color: inherit;
+            font-weight: lighter;
+          }
+          &.selected:before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: $green-medium-light;
+            top: 82px;
+            left: 0;
+          }
+        }
+      }
+      &.float {
+        bottom: 49px;
+        left: 104px;
+        width: calc(100% - 208px);
+        .carousel-item {
+          margin-right: 4px;
+          &.selected {
+            img {
+              border: 1px solid $green-medium-light;
+            }
+          }
+        }
+      }
+      .carousel-item {
+        position: relative;
+        color: $white;
+        cursor: pointer;
+        height: inherit;
+        img {
+          width: 171px;
+          height: 88px;
+        }
+      }
+    }
+    .carousel-tab {
+      position: absolute;
+      left: 104px;
+      right: 104px;
+      bottom: 49px;
+      .tab {
+        display: block;
+        .item {
+          color: $white;
+          &.active,
+          &:active,
+          &:focus {
+            border-top-color: $green-medium-light;
+            color: $green-medium-light;
+          }
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+    }
+    .previous, .next {
+      position: absolute;
+      top: 42%;
+      .btn.btn-circle {
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.16);
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        background-color: rgba(0, 0, 0, 0.48);
+        color: $white;
+        &:before {
+          top: -3px;
+        }
+      }
+    }
+    .previous {
+      left: 4%;
+    }
+    .next {
+      right: 4%;
+      z-index: 3;
+    }
+    &.thumbnail-wide {
+      &::before {
+        padding-top: 48.85%;
+      }
+      .carousel-main-items {
+        width: 100%;
+        overflow: hidden;
+        .carousel-item.active {
+          width: 85%;
+          border-right: 6px solid $white;
+          border-left: 6px solid $white;
+          left: 7.5%;
+        }
+        .prev-item, .next-item {
+          overflow: hidden;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 7.5%;
+          > img {
+            position: absolute;
+            height: 100%;
+          }
+        }
+        .prev-item {
+          left: 0;
+          > img {
+            right: 0;
+          }
+        }
+        .next-item {
+          right: 0;
+          > img {
+            left: 0;
+          }
+        }
+      }
+      .carousel-thumbnails.bottom {
+        left: calc(7.5% + 6px);
+        width: calc(85% - 12px);
+        overflow: hidden;
+      }
+      .introduction {
+        left: 17.5%;
+      }
+      .previous {
+        left: 11.5%;
+      }
+      .next {
+        right: 11.5%;
+      }
+    }
+  }
+  &.thumbnail {
+    max-width: 584px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 88px;
+    overflow: hidden;
+    &::before {
+      content: '';
+      display: block;
+      padding-top: 75%;
+    }
+    .carousel-item.active {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .carousel-thumbnails {
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+      height: 88px;
+      &.bottom {
+        bottom: 0;
+        left: 0;
+        .carousel-item {
+          border: 1px solid $white;
+          &.selected:before {
+            content: "";
+            position: absolute;
+            height: 5px;
+            width: 100%;
+            background-color: $green-medium-light;
+            top: 82px;
+            left: 0;
+          }
+        }
+      }
+      .carousel-item {
+        position: relative;
+        color: $white;
+        cursor: pointer;
+        height: inherit;
+        img {
+          width: 96px;
+          height: 88px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+@media (max-width: $screen-xs) {
+  .carousel.marketing {
+    @include introduction-font-size(5.8px, 21.5px, 6.6px, 5.8px);
+    .carousel-tab, .carousel-thumbnails {
+      display: none;
+    }
+    .previous, .next {
+      .btn.btn-circle {
+        width: 16px;
+        height: 16px;
+        font-size: 10px;
+        &:before {
+          top: -12px;
+        }
+      }
+    }
+    .previous {
+      .btn.btn-circle {
+        &:before {
+          left: 3px !important;
+        }
+      }
+    }
+    .next {
+      .btn.btn-circle {
+        &:before {
+          right: 3px !important;
+        }
+      }
+    }
+  }
+}
+@media (min-width: $screen-xs) and (max-width: $screen-xs-max) {
+  .carousel.marketing {
+    @include introduction-font-size(6.8px, 25.5px, 7.85px, 6.8px);
+    .carousel-tab, .carousel-thumbnails {
+      display: none;
+    }
+    .previous, .next {
+      .btn.btn-circle {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+        &:before {
+          top: -8px;
+        }
+      }
+    }
+    .previous {
+      .btn.btn-circle {
+        &:before {
+          left: 5px !important;
+        }
+      }
+    }
+    .next {
+      .btn.btn-circle {
+        &:before {
+          right: 5px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  @include icon-position-top(2px);
+  .carousel.marketing {
+    @include introduction-font-size(11.45px, 40.5px, 13.1px, 11.45px);
+  }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  @include icon-position-top(2px);
+}
+
+@media (min-width: $screen-lg-min) {
+  @include icon-position-top(3px);
+}

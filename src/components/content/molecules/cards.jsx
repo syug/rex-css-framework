@@ -3,10 +3,16 @@ import Label from '../atoms/labels';
 import Rating from '../atoms/rating';
 import { Routes } from '../../../domain/middleware/routes';
 
-export function landscape(size, header, description, image) {
-  const type = size || '';
+export function landscape(size, header, description, image, border) {
+  let landscapeClassName = 'card';
+  if (size) {
+    landscapeClassName += ` ${size}`;
+  }
+  if (border) {
+    landscapeClassName += ' border';
+  }
   return (
-    <div className={`card ${type}`}>
+    <div className={landscapeClassName}>
       <CardMedia>
         <img src={image} alt="" />
       </CardMedia>
@@ -136,7 +142,7 @@ export default function Cards(props) {
   let content;
   switch (type) {
     case 'size': {
-      content = landscape(props.size, props.header, props.description, image);
+      content = landscape(props.size, props.header, props.description, image, props.border);
       break;
     }
     case 'image': {

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { getContentSource } from './contentSource';
 
 export function Section(props) {
-  const { info: { data }, lang, tabTarget, type, className } = props;  
+  const { info: { data }, lang, tabTarget, type, className } = props;
   const content = getContentSource(data, tabTarget, lang);
   let options = {};
 
@@ -18,4 +18,3 @@ export function Section(props) {
     </section>
   );
 }
-
