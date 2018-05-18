@@ -19,7 +19,6 @@ export default function SearchBar(props) {
         <div className="search-input-wrapper">
           {scope}
           <input type="text" placeholder="Search" />
-          <span className="close" />
         </div>
         <div className="search-btn">
           <Icon name="search" />
