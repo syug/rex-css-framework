@@ -4,7 +4,7 @@ function isActive(isLast, t){
   if(isLast){
     return {
       class: 'active',
-      child: (<span>{t}</span>)
+      child: (t)
     }
   } else {
     return {
@@ -22,7 +22,8 @@ export default function Breadcrumnbs(props) {
       return (
         <li className={sibling.class} key={index.toString()}>
           {sibling.child}
-      </li>)
+        </li>
+      )
   });
   return (
     <ul className="breadcrumbs">
